@@ -1,0 +1,466 @@
+
+#dati{
+    width: 100%;
+    padding:   15px;
+    display: flex;
+    justify-content: space-between;
+}
+#save{
+    width: 700px;
+    
+
+}
+#modifica{
+    height: 25px;
+    
+}
+#modifica p{
+    border-bottom: 2px solid black;
+    
+}
+.error {
+    color: red;
+    font-size: 15px;
+}
+.error1{
+    color: red;
+    font-size: 12px;
+}
+#continua{
+    display: flex;
+    justify-content: end;
+}
+#formContainer  button{
+    width: 172px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-color: transparent;
+    border-radius: 48px;
+    
+}
+#formContainer  button:hover{
+    background-color: #707072;
+}
+header #primostrato{
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header #primostrato #primodestra img {
+  width: 100px;
+  height: 37px;
+}
+#secondostrato{
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 13px;
+    display: flex;
+    justify-content: end;
+}
+#secondostrato a{
+    font-size: 13px;
+    color: black;
+}
+#terzostrato{
+    height: 60px;
+    line-height: 24px;
+    font-style: normal;
+    text-transform: none;
+}
+#terzostrato #titoloP{
+   margin: 0 auto;
+   
+   
+}
+#terzostrato #titoloP h1{
+    text-align: center;
+    font-size: 26px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    
+}
+#contenitore{
+    margin: 20px auto;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "sinistra destra";
+}
+#contenitore #destra{
+    grid-area: destra;
+    width: 363px;
+    
+    
+}
+/*sinistra*/
+#contenitore #sinistra{
+    grid-area: sinistra;
+    width: 700px;
+    margin-right: 20px;
+    
+    
+    
+}
+#sinistra h2{
+    font-size: 24px;
+}
+#icone{
+    display: flex;
+    justify-content: space-between;
+}
+#icone .opzioni1 {
+    width: 329px;
+    height: 48px;
+    border-radius: 8px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 20px;
+}
+#icone > div p{
+    width: 329px;
+    text-align: center;
+    
+}
+.centro{
+    margin-top: 10px;
+   
+}
+#input1{
+    
+    margin-bottom: 25px;
+   
+}
+#input1 #primoinput1{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    
+}
+#input1 #primoinput1 > div{
+    width: 329px;
+    
+    
+}
+#input1 #primoinput1 input{
+    border: 1px solid rgb(204, 204, 204);
+    width: 329px;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+#input2{
+    
+    margin-bottom: 15px ;
+    
+}
+#input2 #secondainput1 input{
+    border: 1px solid rgb(204, 204, 204);
+    width: 700px;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+#input3{
+    
+    margin-bottom: 30px ;
+}
+#terzoinput1{
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+}
+#input3 #terzoinput1 input{
+    border: 1px solid rgb(204, 204, 204);
+    width: 329px;
+    height: 48px;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+ #button{
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+}
+#titolo45{
+    display: flex;
+}
+h2{
+    width: 230px;
+    
+}
+#true{
+    width: 20px;
+    height: 20px;
+    margin: 4px 0 0 0;
+    
+}
+#pagamento button{
+    width: 172px;
+    height: 48px;
+    border-radius: 48px;
+    background: rgb(229, 229, 229);
+    color: rgb(158, 158, 160);
+    border-color: transparent;
+}
+#second p{
+    font-size: 14px;
+    color: gray;
+}
+#second p a{
+    font-size: 12px;
+    color: black;
+}
+#card{
+    border: 1px solid rgb(204, 204, 204);
+    width: 692px;
+    height: 216px;
+    padding: 20px;
+    border-radius: 8px;
+}
+#boxcard{
+    margin-top: 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#boxcard #uno1 input{
+    border: 1px solid rgb(204, 204, 204);
+    width: 306px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+#boxcard .due input{
+    border: 1px solid rgb(204, 204, 204);
+    width: 145px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+#why1{
+    
+    margin-top: 20px ;
+    display: flex;
+    justify-content: end;
+}
+#why1 a{
+    color: black;
+}
+/*fine sinistra*/
+
+
+/*destra*/
+#titolodestra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#titolodestra{
+    margin-bottom: 15px;
+}
+#titolodestra h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+#modifica1 p{
+    margin: 0;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+   
+}
+#subtotale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#costi1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#descrizione2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#red{
+    
+    width: 60px;
+    height: 60px;
+}
+#red img{
+    
+    width: 60px;
+    height: 60px;
+}
+#descrizionee{
+    
+    width: 260px;
+    color: #707072;
+}
+#descrizionee ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#descrizionee ul li p{
+    margin: 0;
+}
+#descrizionee ul li:first-child{
+    color: black;
+}
+#due{
+    display: none;
+}
+/*fine destra*/
+@media screen and (max-width:525px){
+    #due{
+        display: block;
+    }
+    #contenitore{
+        grid-template-areas: 
+        "destra"
+        "sinistra";
+        
+    }
+    #contenitore #sinistra{
+    
+        width:460px;
+        
+        
+    }
+    #icone{
+        display: flex;
+        justify-content: space-between;
+    }
+    #icone .opzioni1 {
+        width: 270px;
+        margin: 0 35px 20px 0;
+    }
+    #icone > div p{
+        width: 220px;
+    }
+    #input1{
+    
+        margin-bottom: 25px;
+        
+       
+    }
+    #input1 #primoinput1{
+        width: 482px;
+        
+        
+        
+    }
+    #input1 #primoinput1 > div{
+        width: 300px;
+        
+    }
+    #input1 #primoinput1 input{
+        border: 1px solid rgb(204, 204, 204);
+        width: 230px;
+        height: 48px;
+        margin: 0 20px 0 0 ;
+        
+    }
+    #input2 #secondainput1 input{
+        width:481px;
+    }
+    #input3{
+    
+        margin-bottom: 30px ;
+    }
+    #terzoinput1{
+        height: 50px;
+
+    }
+    #input3 #terzoinput1 input{
+        border: 1px solid rgb(204, 204, 204);
+        width: 230px;
+        height: 48px;
+        margin: 0 20px 0 0 ;
+    }
+    .error {
+        font-size: 12px;
+    }
+    #dati{
+        width: 482px;
+        padding:   15px;
+    }
+    #save{
+        width: 320px;
+    }
+    #modifica{
+        width: 68px;
+        height: 25px;
+    }
+    #card{
+        width: 482px;
+        height: 420px;
+    }
+    #boxcard{
+        display: block;
+        
+    }
+    #boxcard #uno1 input{
+        width: 100%;
+        margin-bottom: 10px;
+        
+        
+        
+    }
+    #boxcard .due input{
+        width: 100%;
+        margin-bottom: 10px;
+       
+        
+    }
+    #why1{
+        margin-top: 20px ;
+        display: flex;
+        justify-content: end;
+    }
+    #why1 a{
+        color: black;
+    }
+    #contenitore #destra{
+        width: 480px;
+       
+    }
+    #uno{
+        display: none;
+    }
+    #due{
+        width: 100%;
+    }
+    #due button{
+        width: 480px;
+        padding: 0;
+    }
+    .accordion-body{
+        padding: 0;
+    }
+    .error1{
+        margin-bottom: 10px;
+    }
+
+ 
+
+}
+
+/*
+La direttiva required è usata per indicare che un campo di input è obbligatorio.
+La proprietà submitted viene utilizzata per controllare se il modulo è stato inviato, permettendo così di visualizzare i messaggi di errore solo dopo un tentativo di invio.
+userForm.form.controls['campo']?.invalid verifica se un campo specifico è valido o meno.
+I messaggi di errore sono visualizzati solo se il modulo è stato inviato e se i campi non sono validi.
+Il pulsante Salva e continua ha l'attributo type="submit" per assicurarsi che attivi l'invio del modulo.*/

@@ -1,0 +1,289 @@
+<div id="checkout">
+    <header>
+       <!-- <div id="primostrato">
+            <div id="primodestra">
+                <img src="../../assets/Loghi/logo1.png" alt="">
+            </div>
+            <div id="primosinistra">
+                <img src="../../assets/icone/shopping-bag copia.png" alt="">
+
+            </div>
+        </div>-->
+        <div id="secondostrato">
+            <div>
+                <p>+39 (0) 238591453 <i class="fas fa-sms"></i>  <a href="#">Chat live</a></p>
+            </div>
+
+        </div>
+        <div id="terzostrato">
+            <div id="titoloP">
+                <h1>Pagamento</h1>
+            </div>
+
+        </div>
+    </header>
+    <div id="contenitore">
+        <div id="sinistra">
+          <div id="opzioni">
+            <div id="titolo45">
+                <h2>Opzioni di consegna</h2><div id="true" *ngIf="truee"><i class="fa-solid fa-check" style="color: #63E6BE;"></i></div>
+            </div>
+            <div id="icone">
+              <div class="opzioni1">
+                <div class="centro"><p><i class="fa-solid fa-truck"></i>Spedizioni</p></div>
+              </div>
+              <div class="opzioni1">
+                <div class="centro"><p><i class="fa-solid fa-location-dot"></i>Ritiro</p></div>
+              </div>
+            </div>
+      
+            
+              <div id="formContainer" *ngIf="apri">
+                <form action="" method="post" (submit)="salva()">
+                  <div id="input1">
+                    <div id="primoinput1">
+                      <div>
+                        <input type="text" placeholder="Nome" id="nome" name="nome" [(ngModel)]="nome">
+                      </div>
+                      <div>
+                        <input type="text" placeholder="Cognome" id="cognome" name="cognome" [(ngModel)]="cognome">
+                      </div>
+                    </div>
+                  </div>
+                  <div id="input2">
+                    <div id="secondainput1">
+                      <div>
+                        <input type="text" placeholder="Inizia a digitare l'indirizzo" id="indirizzo" name="indirizzo" [(ngModel)]="indirizzo">
+                      </div>
+                    </div>
+                  </div>
+                  <div id="input3">
+                    <div id="terzoinput1">
+                      <div>
+                        <input type="text" placeholder="E-mail" id="email" name="email" [(ngModel)]="email">
+                      </div>
+                      <div>
+                        <input type="text" placeholder="Numero di telefono" id="telefono" name="telefono" [(ngModel)]="telefono">
+                      </div>
+                    </div>
+                  </div>
+                  <div id="button1">
+                    <div>
+                      <button type="submit">Salva e continua</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+           
+            
+            <div id="dati" *ngIf="!apri">
+              <div id="save">
+                <p>{{nome}} {{cognome}}</p>
+                <p>{{indirizzo}}</p>
+                <p>{{email}}</p>
+                <p>{{telefono}}</p>
+              </div>
+              <div id="modifica" (click)="indietro()">
+                <p>Modifica</p>
+              </div>
+            </div>
+            <hr>
+          </div>
+      
+          <div id="pagamento">
+            <h2>Pagamento</h2>
+            <div *ngIf="visible">
+                <div id="first">
+                    <p>Paese/regione di fatturazione <i class="fa-solid fa-question"></i></p>
+                  </div>
+                  <div id="second">
+                    <p>Italia <a href="#">Modifica</a></p>
+                  </div>
+                  <div id="seleziona">
+                    <h5>Seleziona metodo pagamento</h5>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                        <i class="fa-solid fa-credit-card"></i> Carta di credito o debito
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                      <label class="form-check-label" for="flexRadioDefault2">
+                        <i class="fa-brands fa-cc-paypal"></i> Paypal
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                      <label class="form-check-label" for="flexRadioDefault3">
+                        <i class="fa-brands fa-google-pay"></i> Google Pay
+                      </label>
+                    </div>
+                    <br>
+                    <div id="card">
+                      <form action="" method="post" (submit)="salva2()">
+                        <div id="controllareform">
+                          <div><h4>Aggiungi carta</h4></div>
+                          <div id="boxcard">
+                            <div id="uno1">
+                              <input type="text" placeholder="Numero carta" id="carta" name="carta" [(ngModel)]="carta" required pattern="[0-9]{16}">
+                            </div>
+                            <div class="due">
+                              <input type="text" placeholder="MM/AA" id="scadenza" name="scadenza" [(ngModel)]="scadenza" required pattern="(0[1-9]|1[0-2])\/[0-9]{2}">
+                            </div>
+                            <div class="due">
+                              <input type="text" placeholder="CVV" id="cvv" name="cvv" [(ngModel)]="cvv" required pattern="[0-9]{3}">
+                            </div>
+                          </div>
+                          <div id="why1">
+                            <div id="why">
+                              <a href="#">Where is my CVV?</a>
+                            </div>
+                          </div>
+                          <div id="button">
+                            <div>
+                              <button type="submit" [routerLink]="'/graziepagina'">Pagamento</button>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      
+        <div id="destra">
+          <div id="uno">
+            <div id="boxetto">
+              <div id="titolodestra">
+                  <div id="carello">
+                      <h2>Nel carrello</h2>
+                  </div>
+                  <div id="modifica1">
+                      <p>Modifica</p>
+                  </div>
+              </div>
+              <div id="subtotale">
+                  <div>
+                      <p>Subtotale</p>
+                  </div>
+                  <div>
+                      <p>{{totale}} €</p>
+                  </div>
+              </div>
+              <div id="costi1">
+                  <div>
+                      <p>Costi di spedizione stimati</p>
+                  </div>
+                  <div>
+                      <p>Gratis</p>
+                  </div>
+              </div>
+              <div id="costi1">
+                  <div>
+                      <strong><p>Totale</p></strong>
+                  </div>
+                  <div>
+                      <strong><p>{{totale}} €</p></strong>
+                  </div>
+              </div>
+  
+            </div>
+            <br>
+            <div id="arrivo">
+              <div id="titino">
+                  <strong><p>Arriva entro il giorno mar 21 mag</p></strong>
+              </div>
+              <div id="descrizione2" *ngFor="let prodotti of prodottiNelcarello">
+                  <div id="red">
+                      <img [src]="prodotti.immagine" alt="">
+                  </div>
+                  <div id="descrizionee" >
+                      <ul>
+                          <li><strong><p>{{prodotti.nome}}</p></strong></li>
+                          <li><p>Misura: {{prodotti.taglia}}</p></li>
+                          <li><p>Colore: {{prodotti.colorefoto}}</p></li>
+                          <li>{{prodotti.prezzo}} €</li>
+                      </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="due">
+            <hr>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button id="button2" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <h2>Nel carrello</h2>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div id="boxetto">
+                      <div id="arrivo">
+                        <div id="titino">
+                            <strong><p>Arriva entro il giorno mar 21 mag</p></strong>
+                        </div>
+                        <div id="descrizione2" *ngFor="let prodotti of prodottiNelcarello">
+                          <div id="red">
+                              <img [src]="prodotti.immagine" alt="">
+                          </div>
+                          <div id="descrizionee" >
+                              <ul>
+                                  <li><strong><p>{{prodotti.nome}}</p></strong></li>
+                                  <li><p>Misura: {{prodotti.taglia}}</p></li>
+                                  <li><p>Colore: {{prodotti.colorefoto}}</p></li>
+                                  <li>{{prodotti.prezzo}} €</li>
+                              </ul>
+                          </div>
+                      </div>
+                      </div>
+                      <div id="subtotale">
+                          <div>
+                              <p>Subtotale</p>
+                          </div>
+                          <div>
+                              <p>{{totale}}</p>
+                          </div>
+                      </div>
+                      <div id="costi1">
+                          <div>
+                              <p>Costi di spedizione stimati</p>
+                          </div>
+                          <div>
+                              <p>Gratis</p>
+                          </div>
+                      </div>
+                      <div id="costi1">
+                          <div>
+                              <strong><p>Totale</p></strong>
+                          </div>
+                          <div>
+                              <strong><p>{{totale}} €</p></strong>
+                          </div>
+                      </div>
+          
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+        
+    </div>
+    
+    
+      
+
+</div>
+
+<br>
+<br>
+<br>
+

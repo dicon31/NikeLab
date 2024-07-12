@@ -1,0 +1,362 @@
+<header>
+    <div id="header1">
+        <div>
+            <img src="../../assets/Loghi/logojordan.png" alt="" id="img1">
+            <img src="../../assets/Loghi/logoconverse.png" alt="" id="img2">
+        </div>
+        <div id="menu1">
+            <ul>
+                <li><strong><a href="#">Trova un negozio |</a></strong></li>
+                <li><strong><a href="#">Aiuto |</a></strong></li>
+                <li><strong><a href="#">Unisciti a noi |</a></strong></li>
+                <li><strong><a href="#">Accedi |</a></strong></li>
+            </ul>
+
+        </div>
+
+    </div>
+    <div id="header2">
+        <div id="logo1">
+            <a [routerLink] ="'/home'"><img src="../../assets/Loghi/logo1.png" alt=""></a>
+        </div>
+        <div id="menu22">
+            <ul>
+                <li (mouseover)="mostraMouse1()" ><a [routerLink]="'/novita'">Novita e in evidenzia</a></li>
+                <li (mouseover)="mostraMouse2()" ><a [routerLink]="'/uomo'">Uomo</a></li>
+                <li (mouseover)="mostraMouse3()" ><a [routerLink]="'/donna'">Donna</a></li>
+                <li (mouseover)="mostraMouse4()" ><a [routerLink]="'/kids'">Kids</a></li>
+                <li (mouseover)="mostraMouse5()" ><a [routerLink]="'/outlet'">Outlet</a></li>
+            </ul>
+        </div>
+        <div id="input1">
+            <div id="input2">
+                <input type="text" placeholder="Cerca">
+                <button id="btn1"><img src="../../assets/icone/search copia.png" alt=""></button>
+            </div>
+            <div id="input3">
+                <button><img src="../../assets/icone/hearth copia.png" alt=""></button>
+                <button><a [routerLink] = "['/carello']"><img src="../../assets/icone/shopping-bag copia.png" alt=""></a></button>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="header22">
+       <div id="header222">
+        <div id="logo1">
+            <a [routerLink] ="'/home'"><img src="../../assets/Loghi/logo1.png" alt=""></a>
+        </div>
+        <div id="button2">
+            <button><img src="../../assets/icone/search copia.png" alt=""></button>
+            <button><a [routerLink] = "['/carello']"><img src="../../assets/icone/shopping-bag copia.png" alt=""></a></button>
+            <button><img src="../../assets/icone/user.png" alt=""></button>
+            <button><img src="../../assets/icone/hamburger.png" alt=""></button>
+        </div>
+       </div>
+    </div>
+    <div id="header3">
+        <div id="menu">
+            <div id="ms1">
+                <p  [innerHTML]="currentMessage"></p>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="contenitoreSottomenu">
+        
+    <div id="sottomenu1" *ngIf="mouse1" (mouseover)="mostraMouse1()" (mouseleave)="nascondiMouse1()">
+       
+        <div class="sottomenu">
+            <ul>
+                <h4>In evidenzia</h4>
+            
+                <li><a href="#">Tutti i nuovi arrivi</a></li>
+                <li><a href="#">Best seller</a></li>
+                <li><a href="#">Member Shop</a></li>
+                <li><a href="#">Calendario dei lanci SNKRS</a></li>
+                <li><a href="#">Divise delle nazionali 2024</a></li>
+            </ul>
+            <ul>
+                <h4>Scopri le icone</h4>
+                <li><a href="#">Air Force 1</a></li>
+                <li><a href="#">Air Jordan 1</a></li>
+                <li><a href="#">Air Max</a></li>
+                <li><a href="#">Dunk</a></li>
+                <li><a href="#">Blazer</a></li>
+                <li><a href="#">Pegasus</a></li>
+                <li><a href="#">Mercurial</a></li>
+              
+            </ul>
+            <ul>
+                <h4>Scopri lo sport</h4>
+                <li><a href="#">Calcio</a></li>
+                <li><a [routerLink] ="['/novita','Running']">Running</a></li>
+                <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Golf</a></li>
+                <li><a href="#">Tennis</a></li>
+                <li><a href="#">Yoga</a></li>
+                <li><a href="#">Danza</a></li>
+                <li><a href="#">Skateboard</a></li>
+              
+            </ul>
+            <ul>
+                <h4>Di tendenza</h4>
+                <li><a href="#">Air Max Home</a></li>
+                <li><a href="#">Sneakers Y2K</a></li>
+                <li><a href="#">Nike Style By</a></li>
+                <li><a href="#">Collezione Jordan Retro</a></li>
+                <li><a href="#">Teenager</a></li>
+                <li><a href="#">EasyOn</a></li>
+                <li><a href="#">Sostenibilità</a></li>
+              
+            </ul>
+    
+           </div>
+    </div>
+   
+
+
+    <div id="sottomenu2" *ngIf="mouse2" (mouseover)="mostraMouse2()" (mouseleave)="nascondiMouse2()">
+    <div class="sottomenu">
+        <ul>
+            <h4>In evidenzia</h4>
+            <li><a href="#">Novità</a></li>
+            <li><a href="#">Best seller</a></li>
+            <li><a href="#">Air Max Home</a></li>
+            <li><a href="#">Sneakers Y2K</a></li>
+            <li><a href="#">Divise delle nazionali 2024</a></li>
+        </ul>
+        <ul>
+            <h4>Scarpe</h4>
+            <li><a href="#">Tutte le scarpe</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Jordan</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Running</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Fitness e training</a></li>
+            <li><a href="#">Sketeboard</a></li>
+            <li><a href="#">Nike by you</a></li>
+          
+        </ul>
+        <ul>
+            <h4>Abbigliamento</h4>
+            <li><a href="#">Tutto l'abbigliamento</a></li>
+            <li><a href="#">Maglie e t-shirt</a></li>
+            <li><a href="#">Felpe</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Pantaloni e tights</a></li>
+            <li><a href="#">Tute</a></li>
+            <li><a href="#">Giacche</a></li>
+            <li><a href="#">Divise e maglie</a></li>
+
+          
+        </ul>
+        <ul>
+            <h4>Scopri lo sport</h4>
+            <li><a [routerLink] ="['/novita','Running']">Running</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Fitness e training</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Golf</a></li>
+            
+            
+          
+        </ul>
+        <ul>
+            <h4>Accesori</h4>
+            <li><a href="#">Tutti gli accesori</a></li>
+            <li><a href="#">Borse e zaini</a></li>
+            <li><a href="#">Calze</a></li>
+            
+        </ul>
+
+    </div>
+</div>
+
+<div id="sottomenu3" *ngIf="mouse3" (mouseover)="mostraMouse3()" (mouseleave)="nascondiMouse3()">
+    <div class="sottomenu">
+        <ul>
+            <h4>In evidenzia</h4>
+            <li><a href="#">Novità</a></li>
+            <li><a href="#">Best seller</a></li>
+            <li><a href="#">Nike Style By</a></li>
+            <li><a href="#">Air Max Home</a></li>
+            <li><a href="#">Sneakers Y2K</a></li>
+            <li><a href="#">Teenager</a></li>
+            <li><a href="#">Divise delle nazionali 2024</a></li>
+        </ul>
+        <ul>
+            <h4>Scarpe</h4>
+            <li><a href="#">Tutte le scarpe</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Jordan</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Running</a></li>
+            <li><a [routerLink] ="['/novita','Training']">Fitness e training</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a href="#">Nike by you</a></li>
+          
+        </ul>
+        <ul>
+            <h4>Abbigliamento</h4>
+            <li><a href="#">Tutto l'abbigliamento</a></li>
+            <li><a href="#">Maglie e t-shirt</a></li>
+            <li><a href="#">Felpe</a></li>
+            <li><a href="#">Leggins</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Pantaloni</a></li>
+            <li><a href="#">Set coordinati</a></li>
+            <li><a href="#">Giacche</a></li>
+            <li><a href="#">Reggiseni sportivi</a></li>
+            <li><a href="#">Gonne e abiti</a></li>
+
+          
+        </ul>
+        <ul>
+            <h4>Scopri lo sport</h4>
+            <li><a href="#">Fitness</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Running</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Danza</a></li>
+            <li><a href="#">Yoga</a></li>
+            <li><a href="#">Golf</a></li>
+            
+            
+          
+        </ul>
+        <ul>
+            <h4>Accesori</h4>
+            <li><a href="#">Tutti gli accesori</a></li>
+            <li><a href="#">Borse e zaini</a></li>
+            <li><a href="#">Calze</a></li>
+            
+        </ul>
+
+    </div>
+</div>
+
+
+<div id="sottomenu4" *ngIf="mouse4" (mouseover)="mostraMouse4()" (mouseleave)="nascondiMouse4()">
+    <div class="sottomenu">
+        <ul>
+            <h4>In evidenzia</h4>
+            <li><a href="#">Novità</a></li>
+            <li><a href="#">Best seller</a></li>
+            <li><a href="#">Teenager</a></li>
+            <li><a href="#">Air Max Home</a></li>
+            <li><a href="#">EasyOn</a></li>
+            <li><a href="#">Divise delle nazionali 2024</a></li>
+        </ul>
+        <ul>
+            <h4>Scarpe</h4>
+            <li><a href="#">Tutte le scarpe</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Jordan</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a href="#">Running</a></li>
+            <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+            
+          
+        </ul>
+        <ul>
+            <h4>Abbigliamento</h4>
+            <li><a href="#">Tutto l'abbigliamento</a></li>
+            <li><a href="#">Maglie e t-shirt</a></li>
+            <li><a href="#">Felpe</a></li>
+            <li><a href="#">Tute</a></li>
+            <li><a href="#">Shorts</a></li>
+            <li><a href="#">Pantaloni e leggins</a></li>
+            <li><a href="#">Giacche</a></li>
+            <li><a href="#">Divise e maglie</a></li>
+            <li><a href="#">Reggiseni sportivi</a></li>
+            <li><a href="#">Gonne e abiti</a></li>
+
+          
+        </ul>
+        <ul>
+            <h4>Kids per età</h4>
+            <li><a href="#">Ragazzo/a(7-15 anni)</a></li>
+            <li><a href="#">Bambino/a(3-7 anni)</a></li>
+            <li><a href="#">Bebè e bimbo/a(0-3anni)</a></li>
+           
+            
+            
+          
+        </ul>
+        <ul>
+            <h4>Accesori</h4>
+            <li><a href="#">Tutti gli accesori</a></li>
+            <li><a href="#">Borse e zaini</a></li>
+            <li><a href="#">Capelli</a></li>
+            <li><a href="#">Calze</a></li>
+            
+        </ul>
+
+    </div>
+</div>
+
+<div id="sottomenu5" *ngIf="mouse5" (mouseover)="mostraMouse5()" (mouseleave)="nascondiMouse5()">
+
+    <div class="sottomenu">
+        <ul>
+            <h4>Sconti e offerte</h4>
+            <li><a href="#">Tutti gli articoli in sconto</a></li>
+            <li><a href="#">Best seller</a></li>
+            <li><a href="#">Ultima collezione</a></li>
+            
+        </ul>
+        <ul>
+            <h4>Sconti per lui</h4>
+            <li><a href="#">Tutti gli articoli in sconto-<br>Uomo</a></li>
+            <li><a href="#">Scarpe</a></li>
+            <li><a href="#">Abbigliamento</a></li>
+            <li><a href="#">Accesori</a></li>
+           
+            
+          
+        </ul>
+        <ul>
+            <h4>Sconti per lei</h4>
+            <li><a href="#">Tutti gli articoli in sconto-<br>Donna</a></li>
+            <li><a href="#">Scarpe</a></li>
+            <li><a href="#">Abbigliamento</a></li>
+            <li><a href="#">Accesori</a></li>
+
+          
+        </ul>
+        <ul>
+            <h4>Sconti per bambini</h4>
+            <li><a href="#">Tutti gli articoli in sconto-<br>Kids</a></li>
+            <li><a href="#">Scarpe</a></li>
+            <li><a href="#">Abbigliamento</a></li>
+            <li><a href="#">Accesori</a></li>
+           
+            
+            
+          
+        </ul>
+        <ul>
+            <h4>Sconti per sport</h4>
+            <li><a href="#">Running</a></li>
+            <li><a href="#">Calcio</a></li>
+            <li><a [routerLink] ="['/novita','Running']">Fitness e training</a></li>
+            <li><a [routerLink] ="['/novita','Basket']">Basket</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Golf</a></li>
+            <li><a href="#">Yoga</a></li>
+            
+            
+        </ul>
+
+    </div>
+</div>
+
+
+
+
+</div>
+

@@ -1,0 +1,65 @@
+<div id="tutto">
+    <div id="titolo">
+        <h2>IL TUO ORDINE E' STATO CONFERMATO</h2>
+        <p id="notizie">
+            Buone notizie,abbiamo ricevuto il tuo ordine. <br>
+            Grazie per aver acquistato su Lab Air. <br>
+            Ecco un riassunto del tuo ordine e dei dettagli che ci hai fornito.
+        </p>
+        <div>
+            <div id="boxetto">
+                <div id="titolodestra">
+                    <div id="carello">
+                        <h2>Nel carrello</h2>
+                    </div>
+                </div>
+                <div id="subtotale">
+                    <div>
+                        <p>Subtotale</p>
+                    </div>
+                    <div>
+                        <p>{{totale}} €</p>
+                    </div>
+                </div>
+                <div id="costi1">
+                    <div>
+                        <p>Costi di spedizione stimati</p>
+                    </div>
+                    <div>
+                        <p>Gratis</p>
+                    </div>
+                </div>
+                <div id="costi1">
+                    <div>
+                        <strong><p>Totale</p></strong>
+                    </div>
+                    <div>
+                        <strong><p>{{totale}} €</p></strong>
+                    </div>
+                </div>
+    
+              </div>
+              <div id="arrivo">
+                <div id="titino">
+                    <strong><p>Arriva entro il giorno mar 21 mag</p></strong>
+                </div>
+                <div id="descrizione2" *ngFor="let prodotti of prodottiNelcarello">
+                    <div id="red">
+                        <img [src]="prodotti.immagine" alt="">
+                    </div>
+                    <div id="descrizionee" >
+                        <ul>
+                            <li><strong><p>{{prodotti.nome}}</p></strong></li>
+                            <li><p>Misura: {{prodotti.taglia}}</p></li>
+                            <li><p>Colore: {{prodotti.colorefoto}}</p></li>
+                            <li>{{prodotti.prezzo}} €</li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+        </div>
+           
+    
+    </div>
+    
+</div>

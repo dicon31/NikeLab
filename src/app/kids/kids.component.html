@@ -1,0 +1,274 @@
+<br>
+<br>
+<div id="over">
+    <div id="kids">
+        <div id="strato1">
+            
+                <div id="titolo">
+                   <h1>Kids</h1> 
+                </div>
+                <br>
+                  
+                <div id="menuprincipale">
+                    <ul>
+                        <li><a href="#">Outlet</a></li>
+                        <li><a href="#">Scarpe</a></li>
+                        <li><a href="#">Abbigliamento</a></li>
+                        <li><a href="#">Novità</a></li>
+                        <li><a href="#">Mini me</a></li>
+                        <li><a href="#">Ragazzi</a></li>
+                    </ul>
+                </div>
+            
+    
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    <div id="strato2">
+        <div>
+            <h5>Feel The Unreal</h5>
+            <h3>AIR MAX DN</h3>
+            <p>Tecnologia Air: la nuova generazione.</p>
+            <br>
+            <ul>
+                <li>
+                    <button>Acquista</button>
+    
+                </li>
+                <li>
+                    <button>Scopri articoli per teenager</button>
+                </li>
+            </ul>
+    
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="strato3">
+        <img src="../../assets/home/kids.png" alt="">
+    
+    </div>
+    <div id="boxslide">
+        <div id="box1">
+            <div id="titolo1">
+                <h2>Tutte le migliori novità</h2>
+                <div>
+                    <button (click)="dietro1()">&lt;</button>
+                    <button (click)="avanti1()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider"> 
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + 'px)'">
+                    <div class="slide" *ngFor="let item of items"> 
+                        <img [src]="item.image" alt=""> 
+                        <div id="descrizione">
+                            <h3>{{ item.title }}</h3>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div id="box4">
+            <div id="titolo">
+                <h2>Scarpe - Kids </h2>
+                <div>
+                    <button (click)="dietro4()">&lt;</button>
+                    <button (click)="avanti4()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider">
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex3 * slideWidth3) + 'px)'">
+                    <a  *ngFor="let nikee of tipo" [routerLink]= "['/detail',nikee.id]">
+                        <div class="slide" >
+                            <img [src]="nikee.immagine" alt="">
+                            <div>
+                               <h2>{{nikee.nome}}</h2>
+                               <h5>{{nikee.categoria}}</h5>
+                               <h3>{{nikee.prezzo}}€</h3>
+                            </div>
+                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="footer">
+            <img src="../../assets/kids/secondo/bambino7.png" alt="">
+            <div id="footer1">
+                <h2>HIGHLIGHT PER I MEMBER</h2>
+                <br>
+                <p>Scopri i vantaggi per tutta la famiglia</p>
+                <br>
+                <button>Scopri di più</button>
+    
+            </div>
+        </div>
+    </div>
+    <div id="contenitoremenu">
+        <div id="uno">
+            <div id="menu">
+        
+                <ul>
+                    <p>Scarpe - Bambini</p>
+                    <li><a href="#">Huarache</a></li>
+                    <li><a href="#">Scarpe da calcio per<br>erba sintetica per <br>bambini</a></li>
+                    <li><a href="#">Nike Air Max 270 per <br> bambini</a></li>
+                    <li><a href="#">Scarpe da palestra </a></li> 
+                    <li><a href="#">Slider da uomo</a></li>
+                    <li><a href="#">Slider per bambino</a></li>
+                    <li><a href="#">Slider per bambina</a></li>
+                    <li><a href="#">Scarpe da passeggio per neonati</a></li>
+                    
+                            
+              
+                </ul>
+                <ul>
+                    <p>Abbigliamento e <br> accessori - Bambini</p>
+                    <li><a href="#">Boys' Offerte su tute da <br> ginnastica per bambino <br> e ragazzo Sale</a> 
+                    <li><a href="#">Abbigliamento - Neonati <br> e bimbi</a> 
+                    <li><a href="#">Leggins</a> 
+                    <li><a href="#">Tuta per bambini in <br> saldo</a> 
+                    <li><a href="#">Giubotto imbottito per <br>bambini</a> 
+                    <li><a href="#">Shorts da running per <br> bambini</a> 
+                    
+        
+                </ul>
+                <ul>
+                    <p>Outfit - Bambini</p>
+                    <li><a href="#">Palloni da basket</a></li>
+                    <li><a href="#">Guanti da football <br>americano</a></li>
+                    <li><a href="#">Divise da calcio per <br> bambini</a></li>
+                    <li><a href="#">NBA per bambini </a></li>
+                </ul>
+                <ul>
+                    <p>In evidenza</p>
+                    <li><a href="#">Abbigliamento</a></li>
+                    <li><a href="#">Costumi da bagno</a></li>
+                    <li><a href="#">Nike Run Club</a></li>
+                    <li><a href="#">Nike Training Club</a></li>
+                    <li><a href="#">Reggiseni sportivi per il running</a></li>
+                    <li><a href="#">Reggiseni sportivi</a></li>
+                    <li><a href="#">bianchi</a></li>
+                    <li><a href="#">Reggiseni sportivi neri</a></li>
+                    <li><a href="#">Jordan per bambini</a></li>
+                    <li><a href="#">Articoli da calcio per bambini</a></li>
+                    <li><a href="#">Running per bambini</a></li>
+                    <li><a href="#">Abbigliamento sportivo</a></li>
+                    <li><a href="#">per bambini</a></li>
+                    <li><a href="#">Golf per bambini</a></li>
+                    <li><a href="#">Tute per bambino</a></li>
+                    <li><a href="#">Tute per bambina</a></li>
+                    <li><a href="#">Regali per bambini</a></li>
+                    <li><a href="#">Regali per bambino</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="due">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <p>Scarpe - Bambini</p>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                       
+                        <li><a href="#">Huarache</a></li>
+                        <li><a href="#">Scarpe da calcio per<br>erba sintetica per bambini</a></li>
+                        <li><a href="#">Nike Air Max 270 per bambini</a></li>
+                        <li><a href="#">Scarpe da palestra </a></li> 
+                        <li><a href="#">Slider da uomo</a></li>
+                        <li><a href="#">Slider per bambino</a></li>
+                        <li><a href="#">Slider per bambina</a></li>
+                        <li><a href="#">Scarpe da passeggio per neonati</a></li>
+    
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <p>Abbigliamento e  accessori - Bambini</p>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+    
+                        
+                        <li><a href="#">Boys' Offerte su tute da  ginnastica per bambino <br> e ragazzo Sale</a> 
+                        <li><a href="#">Abbigliamento - Neonati  e bimbi</a> 
+                        <li><a href="#">Leggins</a> 
+                        <li><a href="#">Tuta per bambini in  saldo</a> 
+                        <li><a href="#">Giubotto imbottito per bambini</a> 
+                        <li><a href="#">Shorts da running per  bambini</a> 
+                     
+                        
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <p>Outfit - Bambini</p>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+                        
+                        <li><a href="#">Palloni da basket</a></li>
+                        <li><a href="#">Guanti da football americano</a></li>
+                        <li><a href="#">Divise da calcio per  bambini</a></li>
+                        <li><a href="#">NBA per bambini </a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+          
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <p>In evidenza</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+                            <li><a href="#">Abbigliamento</a></li>
+                            <li><a href="#">Costumi da bagno</a></li>
+                            <li><a href="#">Nike Run Club</a></li>
+                            <li><a href="#">Nike Training Club</a></li>
+                            <li><a href="#">Reggiseni sportivi per il running</a></li>
+                            <li><a href="#">Reggiseni sportivi</a></li>
+                            <li><a href="#">bianchi</a></li>
+                            <li><a href="#">Reggiseni sportivi neri</a></li>
+                            <li><a href="#">Jordan per bambini</a></li>
+                            <li><a href="#">Articoli da calcio per bambini</a></li>
+                            <li><a href="#">Running per bambini</a></li>
+                            <li><a href="#">Abbigliamento sportivo</a></li>
+                            <li><a href="#">per bambini</a></li>
+                            <li><a href="#">Golf per bambini</a></li>
+                            <li><a href="#">Tute per bambino</a></li>
+                            <li><a href="#">Tute per bambina</a></li>
+                            <li><a href="#">Regali per bambini</a></li>
+                            <li><a href="#">Regali per bambino</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+          </div>
+    
+        </div>
+    
+    </div>
+</div>

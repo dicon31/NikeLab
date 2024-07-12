@@ -1,0 +1,274 @@
+
+<div id="home">
+    <div id="sfondo1">
+        <img src="../../assets/home/nike-just-do-it-1.png" alt="">
+
+    </div>
+    <div id="Camavinga">
+        <div id="sfondo2">
+            <p>Air Max Dn</p>
+            <h3>UNREAL CAMAVINGA</h3>
+            <br>
+            <button>Acquista</button>
+        </div>
+    
+    </div>
+    <div id="Camavingafoto">
+        <img src="../../assets/home/nike-just-do-it.png" alt="">
+    </div>
+    <div id="boxslide">
+        <div id="box1">
+            <div id="titolo">
+                <h2>Tutte le migliori novità</h2>
+                <div>
+                    <button (click)="dietro1()">&lt;</button>
+                    <button (click)="avanti1()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider"> <!-- Contenitore principale dello slider -->
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + 'px)'">
+                    <!-- Elemento che contiene tutte le slide. La trasformazione viene applicata per effettuare lo scorrimento -->
+                    <div class="slide" *ngFor="let item of items"> <!-- Singola slide -->
+                        <img [src]="item.image" alt=""> <!-- Immagine della slide -->
+                        <div id="descrizione">
+                            <h3>{{ item.title }}</h3>
+                        </div> <!-- Titolo della slide -->
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div id="box4">
+            <div id="titolo">
+                <h2>Scarpe</h2>
+                <div>
+                    <button (click)="dietro4()">&lt;</button>
+                    <button (click)="avanti4()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider">
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex3 * slideWidth3) + 'px)'">
+                    <a  *ngFor="let nikee of scarpe" [routerLink]= "['/detail',nikee.id]">
+                        <div class="slide" >
+                            <img [src]="nikee.immagine" alt="">
+                            <div>
+                               <h2>{{nikee.nome}}</h2>
+                               <h5>{{nikee.categoria}}</h5>
+                               <h3>{{nikee.prezzo}}€</h3>
+                            </div>
+                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="titolo">
+                <h2>Acquista per lo sport</h2>
+                <div>
+                    <button (click)="dietro2()">&lt;</button>
+                    <button (click)="avanti2()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider">
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex1 * slideWidth1) + 'px)'">
+                    <div class="slide" *ngFor="let sporty of sport">
+                        <img [src]="sporty.image" alt="">
+                        <div id="buttoni">
+                            <button>{{sporty.nome}}</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="box3">
+            <div id="titolo">
+                <h2>Membership Nike</h2>
+                <div>
+                    <button (click)="dietro3()">&lt;</button>
+                    <button (click)="avanti3()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider">
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex2 * slideWidth2) + 'px)'">
+                    <div class="slide" *ngFor="let membership of member">
+                        <img [src]=" membership.image" alt="">
+                        <div id="testo">
+                           <h3>{{membership.nome}}</h3>
+                           <br>
+                           <h2>{{membership.nome1}}</h2>
+                           <br>
+                           <br> 
+                           <button>{{membership.buttonse}}</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="contenitoremenu">
+        <div id="uno">
+            <div id="menu">
+        
+                <ul>
+                    <p>Scarpe</p>
+                    <li><a href="#">Scarpe da golf</a></li>
+                    <li><a href="#">Sneakers invernali</a></li>
+                    <li><a href="#">Scarpe Gore-Tex</a></li>
+                    <li><a href="#">Scarpe per camminare</a></li> 
+                    <li><a href="#">Air Max 90 bianche</a></li>
+                    <li><a href="#">Scarpe da pesistica</a></li>
+                    <li><a href="#">Sandals & Slides</a></li>
+                    <li><a href="#">Black Running Shoes</a></li>
+                    <li><a href="#">White Running Shoes</a></li>
+                    <li><a href="#">Trail Running Shoes</a></li>
+                    <li><a href="#">Running Shoes Sale</a></li>
+                            
+              
+                </ul>
+                <ul>
+                    <p>Abbigliamento</p>
+                    <li><a href="#">Tutto l'abbigliamento</a></li>
+                    <li><a href="#">Pantaloni da yoga</a></li>
+                    <li><a href="#">Joggers Tech Fleece</a></li>
+                    <li><a href="#">Pantaloni Tech Fleece</a></li> 
+                    <li><a href="#">Felpa Tech Fleece con <br>cappuccio</a></li>
+                    <li><a href="#">Tute da calcio</a></li>
+                    <li><a href="#">Tech Fleece</a></li>
+                    <li><a href="#">Plus Size</a></li> 
+                 
+                    
+                </ul>
+                <ul>
+                    <p>Bambini</p>
+                    <li ><a href="#">Slider per bambini</a></li>
+                    <li ><a href="#">Tuta per bambini in <br> saldo</a></li>
+                    <li ><a href="#">Giubbotto imbottito <br>per bambini</a></li> 
+                    <li><a href="#">Scarpe da calcio bianche</a></li>
+                    <li><a href="#">Scarpe da calcio blu</a></li>
+                    <li><a href="#">Regali</a></li>
+                    <li><a href="#">Regali per bambini </a></li>
+                    <li><a href="#">Regali per il calcio</a></li>
+                    <li><a href="#">Regali per lo yoga</a></li>
+                    <li><a href="#">Regali per la palestra</a></li>
+                </ul>
+                <ul>
+                    <p>In evidenza</p>
+                    <li > <a href="#">Squadre di calcio</a></li>
+                    <li ><a href="#">Calcio</a></li>
+                    <li ><a href="#">Nike Run Club</a></li>
+                    <li ><a href="#">Nike Training Club</a></li>  
+                </ul>
+            </div>
+    
+        </div>
+        <div id="due">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <p>Scarpe</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+
+                            <li><a href="#">Scarpe da golf</a></li>
+                            <li><a href="#">Sneakers invernali</a></li>
+                            <li><a href="#">Scarpe Gore-Tex</a></li>
+                            <li><a href="#">Scarpe per camminare</a></li> 
+                            <li><a href="#">Air Max 90 bianche</a></li>
+                            <li><a href="#">Scarpe da pesistica</a></li>
+                            <li><a href="#">Sandals & Slides</a></li>
+                            <li><a href="#">Black Running Shoes</a></li>
+                            <li><a href="#">White Running Shoes</a></li>
+                            <li><a href="#">Trail Running Shoes</a></li>
+                            <li><a href="#">Running Shoes Sale</a></li>
+                                    
+                      
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <p>Abbigliamento</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+
+                            <li><a href="#">Tutto l'abbigliamento</a></li>
+                            <li><a href="#">Pantaloni da yoga</a></li>
+                            <li><a href="#">Joggers Tech Fleece</a></li>
+                            <li><a href="#">Pantaloni Tech Fleece</a></li> 
+                            <li><a href="#">Felpa Tech Fleece con <br>cappuccio</a></li>
+                            <li><a href="#">Tute da calcio</a></li>
+                            <li><a href="#">Tech Fleece</a></li>
+                            <li><a href="#">Plus Size</a></li> 
+                         
+                            
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <p>Bambini</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul>
+
+                            <li ><a href="#">Slider per bambini</a></li>
+                            <li ><a href="#">Tuta per bambini in <br> saldo</a></li>
+                            <li ><a href="#">Giubbotto imbottito <br>per bambini</a></li> 
+                            <li><a href="#">Scarpe da calcio bianche</a></li>
+                            <li><a href="#">Scarpe da calcio blu</a></li>
+                            <li><a href="#">Regali</a></li>
+                            <li><a href="#">Regali per bambini </a></li>
+                            <li><a href="#">Regali per il calcio</a></li>
+                            <li><a href="#">Regali per lo yoga</a></li>
+                            <li><a href="#">Regali per la palestra</a></li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+              
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <p>In evidenza</p>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+
+                                <li > <a href="#">Squadre di calcio</a></li>
+                                <li ><a href="#">Calcio</a></li>
+                                <li ><a href="#">Nike Run Club</a></li>
+                                <li ><a href="#">Nike Training Club</a></li>  
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+        </div>
+    </div>
+ 
+ 
+    

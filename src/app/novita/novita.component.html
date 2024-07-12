@@ -1,0 +1,47 @@
+<div id="contenitoregrid">
+    <div class="header">
+    
+        <div id="nuovi">
+            <h2>Nuovi Arrivi Nike (50)</h2>
+    
+        </div>
+        <div id="ordina">
+            <p>Nascondi filtri</p>
+            <p>Ordina per</p>
+        </div>
+    
+    
+    </div>
+    <app-sidebar></app-sidebar>
+    <!--<div class="mostra">
+        <div  *ngIf="!vedere">
+            <a  *ngFor="let nikee of scarpe">
+                <div class="card">
+                    <img [src]="nikee.immagine" alt="">
+                   <div id="descrizione">
+                    <h2>{{nikee.nome}}</h2>
+                    <h5>{{nikee.categoria}}</h5>
+                    <h3>{{nikee.prezzo}}€</h3>
+                   </div>
+                    
+                </div>
+            </a>    
+        </div>
+    
+    </div>-->
+    <div id="categoria" *ngIf="vedere">
+        <a  *ngFor="let scarpa of categoria" [routerLink]= "['/detail',scarpa.id]">
+          <div class="card" >
+                <img [src]="scarpa.immagine" alt="">
+                    <div id="descrizione">
+                         <h2>{{scarpa.nome}}</h2>
+                         <h5>{{scarpa.categoria}}</h5>
+                         <h3>{{scarpa.prezzo}}€</h3>
+                    </div>
+            </div>
+        </a>
+    </div>
+    
+  
+</div>
+

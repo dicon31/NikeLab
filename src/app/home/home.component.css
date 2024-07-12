@@ -1,0 +1,245 @@
+a{
+    text-decoration: none;
+}
+#sfondo1{
+    height: 55px;
+    max-width: 100%;
+    /*background: url(../../assets/home/nike-just-do-it-1.png);*/
+}
+#sfondo1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Camavinga{
+    height: 250px;
+    text-align: center; 
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#Camavinga #sfondo2{
+    height: 170px;
+}
+#Camavinga #sfondo2 h3 {
+    font-family: "Anton", sans-serif;
+  font-weight: 1900;
+  font-size: 80px;
+}
+#Camavinga #sfondo2 p {
+    font-family: sans-serif;
+    font-size: large;
+    
+}
+#Camavinga #sfondo2 button{
+    width: 105px;
+    height: 36px;
+    border-radius: 36px;
+    border: transparent;
+    font-family: sans-serif;
+    font-size: medium;
+    outline-color: black;
+    background-color: black;
+    color: white;
+}
+#Camavinga #sfondo2 button:hover{
+    
+    background-color: #707072;
+}
+#Camavingafoto img {
+    max-width: 100%;
+}
+/*inizio slide*/
+#boxslide {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+}
+#box1 img{
+    width: 600px;
+    height: 600px;
+}
+
+#titolo {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+}
+
+#titolo button {
+    width: 48px;
+    height: 48px;
+    background-color: #E5E5E5;
+    border-radius: 48px;
+    border-color: transparent;
+    margin-right: 10px;
+}
+
+#titolo button:hover {
+    border-color: blue;
+}
+/*slider*/
+#contenitoreslider{
+    overflow-y: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    margin-right: 10px; /* Spazio tra le slide */
+    
+
+}
+#descrizione h3{
+   margin: 15px 0;
+   font-family: sans-serif;
+}
+/*inizio secondo box slide*/
+#box2{
+    margin-top: 16px ; 
+}
+#box2 img {
+    width: 600px;
+    height: 500px;
+}
+#box2 #buttoni button{
+    background-color: white;
+    border-color: transparent;
+    height: 30px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 30px;
+    
+}
+#box2 #buttoni {
+    margin-left: 30px;  
+}
+#box3 img {
+    height: 600px;
+}
+#box3{
+    margin-top: 30px;
+    position: relative;
+}
+#box3 #testo {
+    width: 300px;
+    position: absolute;
+    bottom: 50px;
+    margin-left: 50px;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+#box3 #testo button{
+    background-color: white;
+    border-color: transparent;
+    height: 30px;
+    border-radius: 30px;
+}
+#box4{
+    margin-top: 16px;
+}
+#box4 img {
+    width: 600px;
+    height: 600px;
+}
+#box4 h2{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+
+}
+#box4 h5{
+    font-family: sans-serif;
+    color: #707072;
+    
+}
+#box4 h3{
+    font-family: sans-serif;
+    color: black;
+}
+#contenitoremenu #menu{
+    display: flex;
+    justify-content: center;
+    
+    font-family: sans-serif;
+
+}
+#contenitoremenu #menu ul{
+    list-style: none;
+    margin-right: 40px;
+}
+#contenitoremenu #menu ul li{
+    margin: 10px 0;
+}
+#contenitoremenu #menu ul a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #707072; 
+}
+#contenitoremenu #menu ul a:hover{
+    color: black;
+}
+#due{
+    display: none;
+}
+@media screen and (max-width:1388px){
+    #box4 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box2 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box3 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box1 img {
+        width: 400px;
+        height: 400px;
+    }
+}
+@media screen and (max-width:525px){
+    #uno{
+        display: none;
+    }
+    #due{
+        display: block;
+    }
+    #Camavinga{
+        height: 350px;
+        display: block;
+    }
+    #box4 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box2 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box3 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box1 img {
+        width: 400px;
+        height: 400px;
+    }
+    #due ul{
+        list-style: none;
+    }
+    #due ul li a{
+        text-decoration: none;
+        font-size: 17px;
+        color: #707072; 
+    }
+ 
+ 
+}

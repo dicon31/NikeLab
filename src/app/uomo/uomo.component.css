@@ -1,0 +1,353 @@
+
+#uomo{
+    
+    height: 100px;
+    margin: 0 50px;
+}
+#titolo {
+    display: flex;
+    justify-content: center;
+    
+}
+h1{
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+#menuprincipale ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+#menuprincipale ul li {
+   margin: 0 15px;
+}
+#menuprincipale ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: inherit;
+    font-weight:bold;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#menuprincipale ul li a:hover {
+    color: #707072;
+}
+#camavinga{
+    width: 100%;
+}
+#camavinga img {
+    max-width: 100%;
+}
+#camavinga2{
+    height: 250px;
+    text-align: center; 
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+#camavinga2 #sfondo2{
+    height: 170px;
+}
+#camavinga2 #sfondo2 h3 {
+    font-family: "Anton", sans-serif;
+  font-weight: 1900;
+  font-size: 80px;
+}
+#camavinga2 #sfondo2 p {
+    font-family: sans-serif;
+    font-size: large;
+    
+}
+#camavinga2 #sfondo2 button{
+    width: 105px;
+    height: 36px;
+    border-radius: 36px;
+    border: transparent;
+    font-family: sans-serif;
+    font-size: medium;
+    outline-color: black;
+    background-color: black;
+    color: white;
+}
+#camavinga2 #sfondo2 button:hover{
+    
+    background-color: #707072;
+}
+/*slider*/
+#boxslide {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+    
+}
+#box1 img{
+    width: 600px;
+    height: 800px;
+}
+
+#titolo1 {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+}
+
+#titolo1 button {
+    width: 48px;
+    height: 48px;
+    background-color: #E5E5E5;
+    border-radius: 48px;
+    border-color: transparent;
+    margin-right: 10px;
+}
+
+#titolo1 button:hover {
+    border-color: blue;
+}
+#contenitoreslider{
+    overflow-y: hidden;
+}
+#titolo {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+}
+
+#titolo button {
+    width: 48px;
+    height: 48px;
+    background-color: #E5E5E5;
+    border-radius: 48px;
+    border-color: transparent;
+    margin-right: 10px;
+}
+
+#titolo button:hover {
+    border-color: blue;
+}
+/*slider*/
+#contenitoreslider{
+    overflow-y: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    margin-right: 10px; /* Spazio tra le slide */
+    
+
+}
+#descrizione h3{
+   margin: 15px 0;
+   font-family: sans-serif;
+}
+
+#box4{
+    width: 1820px;
+    margin: 20px auto;
+}
+#box4 img {
+    width: 600px;
+    height: 600px;
+}
+#box4 h2{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+
+}
+#box4 h5{
+    font-family: sans-serif;
+    color: #707072;
+    font-size: 20px;
+    
+}
+#box4 h3{
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+}
+#box4 a{
+    text-decoration: none;
+}
+
+#descrizione{
+    position: absolute;
+    top: 10px;
+    margin-left: 40px;
+    color: white;
+}
+#descrizione h3{
+   margin: 15px 0;
+   font-family: sans-serif;
+}
+#descrizione button{
+    width: 100px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: transparent;
+}
+#box2 button{
+    width: 100px;
+    background-color: white;
+    border-radius: 30px;
+    border-color: transparent;
+}
+/*fine slider*/
+/*contenitore*/
+#contenitoremenu #menu{
+    display: flex;
+    justify-content: center;
+    
+    font-family: sans-serif;
+
+}
+#contenitoremenu #menu ul{
+    list-style: none;
+    margin-right: 40px;
+}
+#contenitoremenu #menu ul li{
+    margin: 10px 0;
+}
+#contenitoremenu #menu ul a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #707072; 
+}
+#contenitoremenu #menu ul a:hover{
+    color: black;
+}
+
+/*fine contenitore menu*/
+.foto2{
+    width: 100%;
+    display: inline-flex;
+
+}
+.foto2 img{
+    max-width: 100%;
+    display: flex;
+}
+.primafoto{
+  
+   width: 50%;
+  
+   
+
+}
+.secondafoto{
+  width: 50%;
+ 
+    
+}
+#sopra{
+    width: 100%;
+    border: 2px solid red;
+    color: white;
+   
+    
+}
+#sopra{
+    position: absolute;
+    top: 200px;
+    
+}
+#centrale{
+    display: flex;
+}
+#centrale img{
+    width: 100%;
+}
+#sinistra{
+    width: 50%;
+    
+}
+#destra{
+    width: 50%;
+    
+}
+#due{
+    display: block;
+}
+#due ul{
+    padding: 0;
+}
+#due ul li a:hover{
+    color: black;
+}
+
+@media screen and (max-width:525px){
+    #uno{
+        display: none;
+    }
+    #box4 img {
+        width: 400px;
+        height: 400px;
+    }
+    #box4 {
+        width: 100%;
+       
+    }
+    #due{
+        width: 100%;
+        display: block;
+    }
+    #due ul{
+        list-style: none;
+    }
+    #due ul li a{
+        text-decoration: none;
+        font-size: 17px;
+        color: #707072; 
+    }
+    #menuprincipale{
+        display: block;
+
+    }
+    #uomo{
+        margin: 0;
+        height: 130px;
+    }
+    #camavinga2{
+        height: 320px;
+        display: block;
+    }
+    #box1{
+        width: 100%;
+    }
+    #box1 a{
+        color: black;
+        text-decoration: none;
+    }
+    #box1 img{
+        width: 400px;
+        height: 400px;
+    }
+    #box2 img{
+        width: 395px;
+        height: 355px;
+    }
+    #centrale{
+        display: block;
+        
+    }
+    #centrale img {
+        width: 395px;
+        height: 355px;
+        margin-bottom: 10px;
+        
+    }
+    #sopra{
+        top: -2px;
+    }
+ 
+ 
+}
+
+

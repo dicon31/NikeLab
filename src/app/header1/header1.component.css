@@ -1,0 +1,224 @@
+/* Stile per il primo header */
+#header1 {
+    padding: 0 55px;
+    background-color: #f5f5f5;
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+}
+#header1 #img1{
+    width: 24px;
+    height: 24px;
+}
+#header1 #img2{
+    width: 40px;
+    height: 24px;
+    margin: 0 25px;
+}
+
+/* Stile per il menu principale nel primo header */
+#menu1 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#menu1 ul li{
+    margin: 0 10px 0 0;
+}
+#menu1 ul li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family: sans-serif;
+    color: black;
+}
+
+/* Stile per il secondo header */
+#header2{
+    padding: 0 55px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#logo1 img{
+    width: 130px;
+    height: 58px;
+}
+#header2 #menu22{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+#header2 #menu22 ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+#header2 #menu22 ul li{
+    margin: 0 20px 0 0;
+}
+#menu22 ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: black;
+}
+#menu22 ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+/* Stile per l'input di ricerca */
+#input1{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#input2 input{
+    width: 200px;
+    height: 41px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    border-color: transparent;
+    font-size: medium;
+    padding-left: 50px;
+    outline-color: transparent;
+}
+#input2 input:hover{
+    outline-color: transparent;
+}
+#input1 button{
+    width: 40px;
+    height: 41px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: transparent;
+}
+#input1 button:hover{
+    background-color: #707072;
+}
+#input2 #btn1{
+    position: absolute;
+    left: 2px;
+}
+
+/* Stile per il terzo header */
+#header3{
+    padding: 0 55px;
+    height: 55px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aggiunta per centrare verticalmente */
+}
+#header3 #menu {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 15px;
+}
+#header3 #ms1 p {
+    font-size: small;
+}
+#header3 h5{
+    font-size: small;
+}
+
+/* Stile per il quarto header */
+#header22{
+    display: none;
+}
+#header222{
+    padding: 0 55px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#button2{
+    display: flex;
+    align-items: center;
+}
+#button2 button{
+    width: 40px;
+    height: 41px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0 0 0 10px;
+}
+#button2 button:hover{
+    background-color: #707072;
+}
+#button2 button img{
+    width: 24px;
+    height: 24px;
+}
+
+#contenitoreSottomenu {
+    width: 100%;
+    background-color: white;
+    position: absolute; /* Assicura che z-index funzioni */
+    top: 95px;
+    left: 50%; /* Posiziona l'elemento a metà della larghezza del contenitore genitore */
+    transform: translateX(-50%); /* Centra l'elemento rispetto al suo centro */
+    z-index: 2000; /* Imposta un alto valore di z-index per essere sopra altri elementi */
+    display: none; /* Nasconde il sottomenu all'inizio */
+}
+
+#contenitoreSottomenu.mostrato {
+    display: block; /* Mostra il sottomenu quando ha la classe 'mostrato' */
+}
+
+#contenitoreSottomenu .sottomenu {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+#contenitoreSottomenu h4 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+#contenitoreSottomenu ul {
+    list-style: none;
+    margin: 30px;
+}
+
+#contenitoreSottomenu ul li {
+    margin-bottom: 10px;
+}
+
+#contenitoreSottomenu ul li a {
+    text-decoration: none;
+    color: #757575;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#contenitoreSottomenu ul li a:hover{
+  color: black;
+}
+#header3 h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+
+
+
+
+/* Media query per schermi più piccoli */
+@media screen and (max-width: 990px) {
+    #header1{
+        display: none;
+    }
+    #header2{
+        display: none;
+    }
+    #header3{
+        height: 65px;
+    }
+    #header22{
+        display: block;
+    }
+}
+

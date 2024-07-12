@@ -1,0 +1,316 @@
+footer {
+    
+    background-color: #111111;
+}
+#box1{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#box1 ul {
+    list-style: none;
+    margin: 0 30px 0 0;
+}
+#box1 ul li {
+    margin-bottom: 12px;
+}
+#box1 ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+   
+}
+#box1 #lista1 li a{
+    color: white;
+    
+}
+#box1 #lista2 li:first-child a{
+    color: white;
+    font-size: 16px;
+}
+#box1 #lista2 li a{
+    color: #7e7e7e;
+    font-size: 12px;
+}
+#box1 #lista3 li:first-child a{
+    color: white;
+    font-size: 14px;
+}
+#box1 #lista3 li a{
+    color: #7e7e7e;
+    font-size: 12px;
+}
+#box1 #lista2 li a:hover{
+    color: white;
+   
+}
+#box1 #lista3 li a:hover{
+    color: white;
+   
+}
+#treliste{
+   /*border: 2px solid red;*/
+    display: flex;
+}
+/*@font-face{
+    font-family:'fontsocial';
+    src:url(../../font/fontsocial.woff2),
+    url(../../font/fontsocial.woff),
+    url(../../font/fontsocial.ttf);
+}*/
+#icone {
+    
+    height: 32px;
+}
+#icone ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+#icone ul li {
+    margin-left:10px ;
+}
+#icone ul li a{
+    width: 32px;
+    height: 32px;
+    border: 2px solid transparent;
+}
+#icone ul li:first-child{
+    background: url(../../assets/isocialicone/twitter1.png);
+    height: 32px;
+    width: 32px;
+   
+}
+#icone ul li:nth-child(2){
+    background: url(../../assets/isocialicone/facebook1.png);
+    height: 32px;
+    width: 32px;
+    
+}
+#icone ul li:nth-child(3){
+    background: url(../../assets/isocialicone/youtube1.png);
+    height: 32px;
+    width: 32px;
+
+}
+#icone ul li:nth-child(4){
+    background: url(../../assets/isocialicone/instagram1.png);
+    height: 32px;
+    width: 32px;
+
+}
+#icone ul li:first-child:hover{
+    background: url(../../assets/isocialicone/twitter2.png);
+    height: 32px;
+    width: 32px;
+    
+}
+#icone ul li:nth-child(2):hover{
+    background: url(../../assets/isocialicone/facebook2.png);
+    height: 32px;
+    width: 32px;
+   
+}
+#icone ul li:nth-child(3):hover{
+    background: url(../../assets/isocialicone/youtube2.png);
+    height: 32px;
+    width: 32px; 
+}
+#icone ul li:nth-child(4):hover{
+    background: url(../../assets/isocialicone/instagram2.png);
+    height: 32px;
+    width: 32px;
+}
+#box2{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: end;
+}
+#box2 ul{
+    display: flex;
+    list-style: none;
+    margin-right:10px ;
+}
+#box2 ul li {
+    margin-right:10px;
+}
+#box2 ul li a {
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#box2 ul li a:hover{
+    color: white;
+}
+#box3{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#box3 ul {
+    display: flex;
+    list-style: none;
+}
+#box3 ul li{
+   margin-right: 15px;
+   font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+#box3 ul li:last-child{
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#box3 #destra li a {
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#box3 #destra li a:hover{
+    color: white;
+}
+#dopo{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    #box3{
+      display: none;
+    }
+}
+@media screen and (max-width:700px){
+    
+    .accordion-button {
+        background-color: #111111;
+        color: white;
+        
+    }
+
+    .accordion-button.collapsed {
+        background-color: #111111;
+        color: white;
+    }
+
+    .accordion-button:focus {
+        box-shadow: none;
+    }
+
+    .accordion-body {
+        background-color: #111111;
+        color: white;
+    }
+
+    .accordion-item {
+        border: none;
+    }
+
+  
+    #inizio{
+        display: none;
+    }
+    #dopo{
+        display: block;
+    }
+    #box11 ul {
+        list-style: none;
+        margin: 0 30px 0 0;
+    }
+    #box11 ul li {
+        margin-bottom: 12px;
+    }
+    #box11 ul li a {
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+       
+    }
+    #box11 #lista1 li a{
+        color: white;
+        
+    }
+    #box22{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1440px;
+        
+        
+    }
+    #box22 ul{
+        
+        list-style: none;
+        
+    }
+    #box22 ul li {
+        margin-bottom: 10px;
+    }
+    #box22 ul li a {
+        color: #7e7e7e;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    #box22 ul li a:hover{
+        color: white;
+    }
+    #box33{
+        margin: 10px 0;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    #box33 ul {
+        
+        list-style: none;
+    }
+    #box33 ul li{
+       margin-right: 15px;
+       font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        padding: 0;
+    
+    }
+    #box33 ul li:last-child{
+        color: #7e7e7e;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    #box33 #destra li a {
+        color: #7e7e7e;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 13px;
+    }
+    #box33 #destra li a:hover{
+        color: white;
+    }
+   #icone{
+    margin: 20px 0;
+   } 
+   
+}
+
+

@@ -1,0 +1,281 @@
+<br>
+<br>
+<div id="donna">
+    <div id="strato1">
+        
+            <div id="titolo">
+               <h1>Donna</h1> 
+            </div>
+            <br>
+              
+            <div id="menuprincipale">
+                <ul>
+                    <li><a href="#">Scarpe</a></li>
+                    <li><a href="#">Abbigliamento</a></li>
+                    <li><a href="#">Novità</a></li>
+                    <li><a href="#">Best seller</a></li>
+                    <li><a href="#">Teens</a></li>
+                </ul>
+            </div>
+        
+
+    </div>
+
+</div>
+<br>
+<div id="donna1">
+    <img src="../../assets/home/donna.png" alt="">
+
+    <div id="transparent">
+      <p>Feel The Unreal</p>
+      <h3>AIR MAX DN</h3>
+      <p>Tecnologia Air: la nuova generazione.</p>
+      <button>Acquista</button>
+    </div>
+</div>
+<div id="boxslide">
+    <div id="box1">
+        <div id="titolo1">
+            <h2>Tutte le migliori novità</h2>
+            <div>
+                <button (click)="dietro1()">&lt;</button>
+                <button (click)="avanti1()">&gt;</button>
+            </div>
+        </div>
+        <div id="contenitoreslider"> 
+            <div class="slides" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + 'px)'">
+                <div class="slide" *ngFor="let item of items"> 
+                    <img [src]="item.image" alt=""> 
+                    <div id="descrizione">
+                       <h3>{{item.title}}</h3>
+                        
+                     
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="box4">
+        <div id="titolo">
+            <h2>Scarpe - Donna </h2>
+            <div>
+                <button (click)="dietro4()">&lt;</button>
+                <button (click)="avanti4()">&gt;</button>
+            </div>
+        </div>
+        <div id="contenitoreslider">
+            <div class="slides" [style.transform]="'translateX(' + (-currentIndex3 * slideWidth3) + 'px)'">
+                <a  *ngFor="let nikee of tipo" [routerLink]= "['/detail',nikee.id]">
+                    <div class="slide" >
+                        <img [src]="nikee.immagine" alt="">
+                        <div>
+                           <h2>{{nikee.nome}}</h2>
+                           <h5>{{nikee.categoria}}</h5>
+                           <h3>{{nikee.prezzo}}€</h3>
+                        </div>
+                     </div>
+                </a>
+            </div>
+        </div>
+    </div>
+        <div id="box2">
+            <div id="titolo1">
+                <h2>Articoli per la stagione</h2>
+               
+               
+               
+               
+            </div>
+            <div id="boxetto">
+                <div id="sinistra">
+                    <img src="../../assets/donna/secondo/donna1.png" alt="">
+                    <div class="descri1">
+                        <h3>Bra Indy</h3>
+                        <button>Acquista</button>
+                    </div>
+
+                </div>
+                <div id="destra">
+                    <img src="../../assets/donna/secondo/donna2.png" alt="">
+                    <div class="descri1">
+                        <h3>Il tuo look Air</h3>
+                        <button>Acquista</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+</div>
+<div id="contenitoremenu">
+    <div id="uno">
+        <div id="menu">
+    
+            <ul>
+                <p>Scarpe - Donna</p>
+                <li><a href="#">Scarpe sportive da netball</a></li>        
+                <li><a href="#">Scarpe da danza - <br> Donna</a></li>        
+                <li><a href="#">Slider da donna</a></li>      
+                <li><a href="#">Pegasus da donna</a></li>      
+                <li><a href="#">Scarpe per correre <br> sull'asfalto</a></li>      
+                <li><a href="#">Scarpe per <br> sollevamento pesi</a></li>      
+                <li><a href="#">Scarpe per gara da <br> donna</a></li>      
+                <li><a href="#"> Scarpe running <br> chiodate da donna</a></li>          
+            </ul>
+            <ul>
+                <p>Abbigliamento e <br> accessori - Donna</p>
+                <li><a href="#">Outlet di tute sportive</a></li>
+                <li><a href="#">Parastinchi </a></li>
+                <li><a href="#">Giacche running <br> da donna</a> </li>
+                <li><a href="#">Felpe bianche con <br>cappuccio da donna</a></li>
+                <li><a href="#">Abbigliamento per <br> palestra taglie forti</a> </li>
+                <li><a href="#">Shorts 2 in 1 da donna</a></li> 
+                <li><a href="#">Pantaloni in fleece da <br> donna</a> </li>
+                <li><a href="#">Abbigliamento in fleece <br> da donna
+                </a> </li>
+                <li><a href="#">Felpe con cappuccio <br>taglie forti</a> </li>
+                <li><a href="#">Joggers ampi da donna</a> </li>
+    
+            </ul>
+            <ul>
+                <p>Collezioni</p>
+                <li><a href="#">Nike Air Max - Donna</a></li>
+                <li><a href="#">Air Max 97 - Donna</a></li>
+                <li><a href="#">Nike Metcon - Donna </a></li>
+                <li><a href="#">Huarache - Uomo</a></li>
+                <li><a href="#">Nike Air Max 90 - <br> Donna</a></li>
+                <li><a href="#">Nike Presto - Donna</a></li>
+                <li><a href="#">Dunk da donna</a></li>
+            </ul>
+            <ul>
+                <p>In evidenza</p>
+                <li><a href="#">Abbigliamento</a></li>
+                <li><a href="#">Costumi da bagno</a></li>
+                <li><a href="#">Nike Run Club</a></li>
+                <li><a href="#">Nike Training Club</a></li>
+                <li><a href="#">Reggiseni sportivi <br> bianchi</a></li>
+                <li><a href="#">Reggiseni sportivi neri</a></li>
+                <li><a href="#">Reggiseni sportivi taglie <br>grandi</a></li>
+                <li><a href="#">Reggiseni sportivi Nike <br>Swoosh</a></li>
+                <li><a href="#">Reggiseni sportivi Nike <br>Alpha</a></li>
+                <li><a href="#">Reggiseni sportivi Nike <br>Indy</a></li>
+                <li><a href="#">Abbigliamento da tennis da donna</a></li>
+                <li><a href="#">Reggiseni sportivi <br> imbottiti</a></li>
+                <li><a href="#">Borse sportive da <br> donna</a></li>
+                <li><a href="#">Regali per il running da <br> donna </a></li>
+                <li><a href="#">Regali da donna</a></li>
+               
+                
+            </ul>
+        </div>
+    </div>
+    <div id="due">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p>Scarpe - Donna</p>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                    
+                    <li><a href="#">Scarpe sportive da netball</a></li>        
+                    <li><a href="#">Scarpe da danza - <br> Donna</a></li>        
+                    <li><a href="#">Slider da donna</a></li>      
+                    <li><a href="#">Pegasus da donna</a></li>      
+                    <li><a href="#">Scarpe per correre <br> sull'asfalto</a></li>      
+                    <li><a href="#">Scarpe per <br> sollevamento pesi</a></li>      
+                    <li><a href="#">Scarpe per gara da <br> donna</a></li>      
+                    <li><a href="#"> Scarpe running <br> chiodate da donna</a></li>          
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <p>Abbigliamento e accessori - Donna</p>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+
+                   
+                    <li><a href="#">Outlet di tute sportive</a></li>
+                    <li><a href="#">Parastinchi </a></li>
+                    <li><a href="#">Giacche running <br> da donna</a> </li>
+                    <li><a href="#">Felpe bianche con <br>cappuccio da donna</a></li>
+                    <li><a href="#">Abbigliamento per <br> palestra taglie forti</a> </li>
+                    <li><a href="#">Shorts 2 in 1 da donna</a></li> 
+                    <li><a href="#">Pantaloni in fleece da <br> donna</a> </li>
+                    <li><a href="#">Abbigliamento in fleece <br> da donna
+                    </a> </li>
+                    <li><a href="#">Felpe con cappuccio <br>taglie forti</a> </li>
+                    <li><a href="#">Joggers ampi da donna</a> </li>
+                 
+                    
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <p>Collezioni</p>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                   
+                    <li><a href="#">Nike Air Max - Donna</a></li>
+                    <li><a href="#">Air Max 97 - Donna</a></li>
+                    <li><a href="#">Nike Metcon - Donna </a></li>
+                    <li><a href="#">Huarache - Uomo</a></li>
+                    <li><a href="#">Nike Air Max 90 - <br> Donna</a></li>
+                    <li><a href="#">Nike Presto - Donna</a></li>
+                    <li><a href="#">Dunk da donna</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+      
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <p>In evidenza</p>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+
+                       
+                    <li><a href="#">Abbigliamento</a></li>
+                    <li><a href="#">Costumi da bagno</a></li>
+                    <li><a href="#">Nike Run Club</a></li>
+                    <li><a href="#">Nike Training Club</a></li>
+                    <li><a href="#">Reggiseni sportivi bianchi</a></li>
+                    <li><a href="#">Reggiseni sportivi neri</a></li>
+                    <li><a href="#">Reggiseni sportivi taglie grandi</a></li>
+                    <li><a href="#">Reggiseni sportivi Nike Swoosh</a></li>
+                    <li><a href="#">Reggiseni sportivi Nike Alpha</a></li>
+                    <li><a href="#">Reggiseni sportivi Nike >Indy</a></li>
+                    <li><a href="#">Abbigliamento da tennis da donna</a></li>
+                    <li><a href="#">Reggiseni sportivi  imbottiti</a></li>
+                    <li><a href="#">Borse sportive da  donna</a></li>
+                    <li><a href="#">Regali per il running da donna </a></li>
+                    <li><a href="#">Regali da donna</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>

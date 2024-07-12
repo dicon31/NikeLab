@@ -1,0 +1,615 @@
+/*detail*/
+#detail{
+    /*border: 2px solid green;*/
+    max-width: 1200px;
+    /*height: 8000px;*/
+    margin: 50px auto;
+    overflow-x: hidden;
+    
+}
+#margin{
+    display: grid;
+    grid-template-areas:
+    "sinistra destra" ;
+    
+    
+    
+}
+#sinistra{
+    grid-area: sinistra;
+    width: 650px;
+    /*height: 8000px;*/
+    
+}
+#sinistra #scarpe{
+    
+    display: grid;
+    grid-template-areas:
+    "quadretti mostra" ;
+}
+#sinistra #scarpe #quadretti{
+    
+    grid-area: quadretti;
+    width: 60px;
+    height: 670px;
+    
+
+} 
+
+.boxetto{
+    border-radius: 5px;
+    width: 65px;
+    height: 65px;
+    background-color: #f5f5f5;
+}
+.boxetto img {
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+#sinistra #scarpe #mostra{
+   
+    grid-area: mostra;
+    width: 540px;
+    height: 700px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    
+   
+}
+#sinistra #scarpe #mostra img{
+    grid-area: mostra;
+    width: 540px;
+    height: 700px; 
+    border-radius: 20px;
+}
+
+
+
+
+#destra{
+    grid-area: destra;
+    /*border: 2px solid red;*/
+    /*height: 8000px;*/
+    width: 385px;
+   
+}
+#destra h1{
+    font-size: 25px;
+    font-weight: 500;
+    
+    
+}
+#destra h2{
+    font-size: 17px;   
+}
+#destra h3{
+    font-size: 16px;   
+}
+#destra #seleziona{
+    width: 376px;
+    height: 48px;
+
+    display: flex;
+}
+#destra #seleziona #sinistra1 h3{
+    color: black;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+#destra #seleziona #destra1{
+    color: #707072;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+#destra #taglie{
+    margin-top: 5px;
+    width: 396px;
+    height: 170px;
+    display: inline-block;
+    
+    
+}
+#numero{
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    width: 120px;
+    height: 48px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    margin: 0 10px 10px 0;
+}
+#numero:hover{
+    border: 1px solid black;
+}
+#button button{
+    width: 376px;
+    height: 62px;
+    border-radius: 62px;
+    margin: 8px 0;
+    font-size: 16px;
+}
+#button #button1{
+    border-color: transparent;
+    background-color: black;
+    color: white;
+}
+#button #button1:hover{
+    background-color: #707072;
+}
+#button #button2{
+    background-color: white;
+    border: 1px solid #f5f5f5;
+    color: black;
+}
+#button #button2:hover{
+    border: 1px solid black;
+}
+#escluso{
+    text-align: center;
+    color: #707072;
+}
+#ritiro{
+    width: 376px;
+    height: 148px;
+    padding: 24px 0 ;
+}
+#ritiro ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#ritiro ul li {
+    color: black;
+}
+#ritiro ul li a {
+    color: black;
+} 
+#ritiro ul li:last-child{
+    color: #707072;
+    font-size: 14px;
+}
+#descrizione{
+   height: 150px; 
+}
+#descrizione p{
+    line-height: 1.75;
+    font-size: 18px;
+    font-family: sans-serif;
+ }
+ #descrizione ul{
+   font-size: 16px;
+ }
+#descrizione p a:last-child{
+    color: black;
+    font-size: 18px;
+
+}
+#descrizione #accordion{
+    margin-top: 20px;
+}
+/*FINE DETAIL*/
+#piccolocarello{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    
+    
+    
+}
+#boxetto1{
+    
+    width: 428px;
+    height: 231px;
+    position: absolute;
+    top: -60px;
+    right: 40px;
+    background-color: white;
+    padding: 15px;
+    
+}
+#boxetto1 img{
+   width: 65px; 
+   height: 65px;
+}
+#boxetto1 #check{
+    width: 180px;
+    
+}
+#boxetto1 #check img{
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+#flexami{
+    display: flex;
+    justify-content: space-between;
+}
+#flexami button{
+   width: 30px;
+   height: 30px;
+   border-color: transparent;
+   background-color: transparent;
+}
+#x {
+    
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+#descrizione1{
+    
+    display: flex;
+  
+}
+#img1{
+    
+    width: 69px; 
+    height: 69px;
+}
+#piccole{
+  
+    width: 300px;
+   margin-left: 15px;
+}
+#piccole h5{
+    font-size: 15px;
+}
+#piccole p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #707072;
+}
+#piccole p:last-child{
+    color: black;
+}
+#buttonse{
+    margin-top: 20px;
+}
+#buttonse button{
+    
+    margin: 0 10px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 15px;
+    border-color: transparent;
+}
+#buttonse button:first-child{
+    width: 150px;
+    border: 1px solid #707072;
+    color: black;
+    background-color: white;
+
+}
+
+#buttonse button:last-child{
+    width: 120px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+
+
+}
+#buttonse button a{
+    color: black;
+    text-decoration: none;
+}
+#titolo45{
+    display: none;
+}
+
+
+@media screen and (max-width:758px){
+    #margin{
+        width: 100%;
+        display: grid;
+        
+        grid-template-areas:
+        "sinistra"
+        "destra";
+    }
+    #sinistra #scarpe{
+    
+        display: grid;
+        grid-template-areas:
+        "mostra" ;
+    }
+    
+    #quadretti{
+        display: none;
+    }
+    #titolo4{
+        display: none;
+    }
+    #titolo45{
+        width: 100%;
+        
+        padding-top: 20px;
+        display: block;
+    }
+    #titolo45 h1{
+        font-size: 20px;
+    }
+    #titolo45 h2{
+        font-size: 20px;
+    }
+    #titolo45 h3{
+        font-size: 20px;
+    }
+    #sinistra #scarpe #mostra{
+        
+        width:720px;
+        height: 900px; 
+        border-radius: 20px;
+    }
+    #sinistra #scarpe #mostra img{
+        
+        width:720px;
+        height: 900px; 
+        border-radius: 20px;
+    }
+    #destra{
+        
+        grid-area: destra;
+        width:720px;
+        
+        
+       
+    }
+    #destra #seleziona{
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #destra #taglie{
+       
+        width:720px;
+        height: 200px;
+        
+        
+        
+        
+    }
+    #numero{
+        display: inline-block;
+        width: 225px;
+        margin: 0 10px 15px 0;
+    }
+    #button button{
+        
+        width:720px;
+        margin: 10px 0;
+        height: 60px;
+        font-size: 15px;
+        border-color: transparent;
+    }
+    
+    
+  
+  
+    
+
+}
+@media screen and (max-width:525px){
+    #margin{
+        width: 100%;
+        display: grid;
+        
+        grid-template-areas:
+        "sinistra"
+        "destra";
+    }
+   
+    #sinistra #scarpe{
+    
+        display: grid;
+        grid-template-areas:
+        "mostra" ;
+    }
+    
+    #quadretti{
+        display: none;
+    }
+    #titolo4{
+        display: none;
+    }
+    #titolo45{
+        width: 100%;
+        
+        padding-top: 20px;
+        display: block;
+    }
+    #titolo45 h1{
+        font-size: 20px;
+    }
+    #titolo45 h2{
+        font-size: 20px;
+    }
+    #titolo45 h3{
+        font-size: 20px;
+    }
+    #sinistra #scarpe #mostra{
+        
+        width:485px;
+        height: 600px; 
+        border-radius: 20px;
+    }
+    #sinistra #scarpe #mostra img{
+        
+        width:485px;
+        height: 600px; 
+        border-radius: 20px;
+    }
+    #destra{
+        
+        grid-area: destra;
+        width:485px;
+        /*height: 8000px;*/
+        
+       
+    }
+    #destra #seleziona{
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #destra #taglie{
+       
+        width:485px;
+        height: 200px;
+        
+        
+        
+        
+    }
+    #numero{
+        display: inline-block;
+        width: 145px;
+        margin: 0 10px 15px 0;
+    }
+    #button button{
+        
+        width:485px;
+        margin: 10px 0;
+        height: 60px;
+        font-size: 15px;
+        border-color: transparent;
+    }
+    #piccolocarello{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+        
+        
+    }
+    #boxetto1{
+        
+        width: 495px;
+        height: 231px;
+        position: absolute;
+        bottom: -260px;
+        left: 5px;
+        background-color: white;
+        padding: 15px;
+        
+    }
+    
+    
+  
+  
+    
+
+}
+@media screen and (max-width:375px){
+    #margin{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "sinistra"
+        "destra";
+        overflow-x: hidden;
+    }
+    #sinistra #scarpe{
+    
+        display: grid;
+        grid-template-areas:
+        "mostra" ;
+    }
+    #quadretti{
+        display: none;
+    }
+    #titolo4{
+        display: none;
+    }
+    #titolo45{
+        width: 100%;
+        
+        padding-top: 20px;
+        display: block;
+    }
+    #titolo45 h1{
+        font-size: 20px;
+    }
+    #titolo45 h2{
+        font-size: 20px;
+    }
+    #titolo45 h3{
+        font-size: 20px;
+    }
+    #sinistra #scarpe #mostra{
+       
+        width:375px;
+        height: 600px; 
+        border-radius: 20px;
+    }
+    #sinistra #scarpe #mostra img{
+        
+        width:375px;
+        height: 600px; 
+        border-radius: 20px;
+    }
+    #destra{
+        grid-area: destra;
+        width:375px;
+        /*border: 2px solid red;*/
+        /*height: 8000px;*/
+        
+       
+    }
+    #destra #seleziona{
+        width:375px;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #destra #taglie{
+       
+        width:375px;
+        height: 200px;
+        
+        
+        
+        
+    }
+    #numero{
+        display: inline-block;
+        width: 100px;
+        margin: 0 15px 15px 0;
+    }
+    #button button{
+        
+        width: 375px;
+        margin: 10px 0;
+        height: 60px;
+        font-size: 15px;
+        border-color: transparent;
+    }
+    #descrizione{
+        width: 355px;
+        
+    }
+    #descrizione p{
+        width: 355px;
+        font-size: 15px;
+        
+    }
+    #lol{
+        width: 375px;
+    }
+    
+    
+    
+  
+  
+    
+
+}
+
+
+

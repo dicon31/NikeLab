@@ -1,0 +1,200 @@
+<div id="nero" *ngFor="let nikee of scarpe">
+  <div id="titolo45">
+    <h1>{{nikee.nome}}</h1>
+    <h2>{{nikee.categoria}}</h2>
+    <br>
+    <h3>{{nikee.prezzo}} € </h3>
+
+  </div>
+  <div id="piccolocarello" >
+    <div id="boxetto1" *ngIf="carello">
+      <div id="flexami">
+        <div id="check">
+
+          <p><img src="../../assets/paypal/check.png" alt=""><strong>Aggiunto al carello</strong></p>
+         
+        </div>
+        <button  (click)="chiusoo()">
+         X
+        </button>
+      
+      </div>
+      <div id="descrizione1">
+        <div id="img1">
+          <img [src]="nikee.immagine" alt="">
+        </div>
+        <div id="piccole">
+          <h5>{{nikee.nome}}</h5>
+          <p>{{nikee.categoria}}</p>
+          <p>Taglia/Misura EU {{tagliaa}}</p>
+          <p>{{nikee.prezzo}} €</p>
+
+        </div>
+      </div>
+      <div id="buttonse">
+        
+
+        <button><a [routerLink]="'/carello'">Visualizza carello</a></button>
+        <button>Pagamento</button>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="detail">
+     <div id="margin" >
+          <div id="sinistra">
+              <div id="scarpe">
+                  <div id="quadretti">
+                     <div class="boxetto" (mouseover)="mostra1()" >
+                      <img [src]="nikee.immagine" alt="">
+  
+                     </div>
+                     <br>
+                     <div class="boxetto" (mouseover)="mostra2()">
+                      <img [src]="nikee.immagine3" alt="">
+                     </div>
+                     <br>
+                     <div class="boxetto" (mouseover)="mostra3()" >
+                      <img [src]="nikee.immagine4" alt="">
+                     </div>
+                     <br>
+                     <div class="boxetto" (mouseover)="mostra4()" >
+                      <img [src]="nikee.immagine5" alt="">
+                     </div> 
+  
+                  </div>
+                  <div id="mostra">
+                      <div *ngIf="Nonvedere1"><img [src]="nikee.immagine" alt=""></div>
+                      <div *ngIf="Nonvedere2"><img [src]="nikee.immagine3" alt=""></div>
+                      <div *ngIf="Nonvedere3"><img [src]="nikee.immagine4" alt=""></div>
+                      <div *ngIf="Nonvedere4"><img [src]="nikee.immagine5" alt=""></div>
+                  </div>
+  
+              </div>
+  
+          </div>
+          <div id="destra">
+              <div>
+                <div id="titolo4">
+                  <h1>{{nikee.nome}}</h1>
+                  <h2>{{nikee.categoria}}</h2>
+                  <br>
+                  <h3>{{nikee.prezzo}} € </h3>
+
+                </div>
+                  
+                  <div id="seleziona">
+                      <div id="sinistra1">
+                          <h3>Seleziona la taglia/misura</h3>
+  
+                      </div>
+                      <div id="destra1">
+                          <p>Guide alle taglie e alle misure</p>
+                      </div>
+                  </div>
+                  <div id="taglie">
+
+                    <div id="numero" *ngFor="let taglia of nikee.taglie_disponibili; let i = index" (click)="selezionaTaglia(taglia)">
+                      EU {{taglia}}
+                    </div>
+                        
+
+                      
+                    
+  
+                  </div>
+
+                  <div id="button">
+                    <button id="button1" (click)="mostracarello(scarpe[0])">Aggiungi al carello</button>
+                      <button id="button2">Aggiungi ai preferiti</button>
+                      <br>
+                      <br>
+                      <div id="escluso">
+                          <p>Questo articolo è escluso dalle promozioni e dagli sconti sul sito</p>
+                      </div>
+  
+                  </div>
+                  <div id="ritiro">
+                      <ul>
+                          <li>Ritiro gratuito</li>
+                          <li><a href="#">Trova un negozio</a></li>
+                          <br>
+                          <li>Opzione "Clicca e ritira" disponibile al pagamento</li>
+                      </ul>
+  
+                  </div>
+                  <div id="descrizione">
+                     <p>
+                      {{nikee.descrizione}}
+                     </p> 
+                     <ul>
+                          <li>Colore mostrato in foto:  {{nikee.colorefoto}}</li>
+                     </ul>
+                     <p><a href="#">Visualizza dettagli prodotto</a></p>
+  
+                  </div>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <div id="lol">
+                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <h2>Taglie/misura e fit</h2>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <ul>
+                                      <li>Calzata ampia:ti consigliamo di ordinare mezza misura in meno</li>
+                                      <li>Guida alle taglie e alle misure</li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <h2>Spedizione e resi gratuiti</h2>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  <div>
+                                      <p>Consegna standard gratuita con la tua membership nike</p>
+                                  </div>
+                                  <ul>
+                                      <li>
+                                          Puoi restituire il tuo ordine gratuitamente entro 30 giorni. <a href="#">Sono previste limitazioni.</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <h2>Ulteriori informazioni</h2>
+                              </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">
+                                  Clicca <a href="#">qui</a> per informazioni su come smaltire gli imballaggi dei prodotti Nike in Italia.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  
+              </div>
+  
+          </div>
+     </div>
+  
+  </div>
+  
+</div>

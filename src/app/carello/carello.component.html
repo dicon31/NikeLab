@@ -1,0 +1,159 @@
+<div id="carello2">
+    <h1>Carrello</h1>
+    <p>Totale {{totale}}€</p>
+</div>
+<div id="carello">
+ 
+    <div id="carellomenu">
+        <div id="sinistra">
+            <div id="titolo">
+                <h2>Spedizione gratuita per i member</h2>
+               <div>
+                <p>Diventa Member Nike e approfitta della spedizione rapida e gratuita. <a href="#">Unisciti a noi</a> o <a href="#">Accedi</a></p>
+               </div>
+
+            </div>
+            <div id="carello1">
+                <h1>Carrello</h1>
+
+            </div>
+            
+                <div id="scarpe" *ngFor="let prodotti of prodottiNelcarello;let i=index">
+                    <div id="immagineshoes">
+                        <img [src]="prodotti.immagine" alt="">
+    
+                    </div>
+                    <div id="flexami">
+                        <div id="nome">
+                            <div id="descrizione33">
+                             <div id="nome1">
+                                 <strong><h5>{{prodotti.nome}}</h5></strong>
+                             </div>
+                             <div>
+                                 <h5>{{prodotti.categoria}}</h5>
+                             </div>
+                             <div>
+                                 <h5>{{prodotti.colorefoto}}</h5>
+                             </div>
+                             <div id="misura">
+                                 <div><h5>Taglia/misura {{prodotti.taglia}} </h5></div>
+                             </div>
+                             <div id="icone">
+                                <ul>
+                                    <li><img src="../../assets/carello/gift.png" alt=""></li>
+                                    <li><img src="../../assets/carello/hearth.png" alt=""></li>
+                                    <span (click)="delete(i)">
+                                        <img src="../../assets/carello/trash.png" alt="Elimina">
+                                    </span>
+                                </ul>
+                             </div>
+                            </div>
+                          
+         
+                         </div>
+                         <div id="prezzo1">
+                            <p>{{prodotti.prezzo}} €</p>
+         
+                         </div>
+                    </div>
+    
+                </div>
+            
+            <div>
+                <p>Ritiro gratuito</p>
+                <a href="#">Trova in negozio</a>
+            </div>
+            <hr>
+        </div>
+        <div id="destra">
+            <div id="riepilogo">
+                <p>Riepilogo</p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <h4>Hai un codice promozionale?</h4>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                           <div id="inputt">
+                            <input type="text"> <button>Applica</button>
+
+                           </div>
+                        </div>
+                      </div>
+                    </div>          
+                </div>
+                <div id="totale">
+                    <div id="totale1">
+                        <h3>Subtotale</h3>
+                    </div>
+                    <div id="somma">
+                        <h3>{{totale}} €</h3>
+
+                    </div>
+                </div>
+                <div id="spedizione">
+                    <div id="spedizione1">
+                        <h3>Costi di spedizione e gestione <br> previsti</h3>
+                    </div>
+                    <div id="spedizione2">
+                        <h3>Gratis</h3>
+
+                    </div>
+                </div>
+                <hr>
+                <div id="totaletutto">
+                    <div>
+                        <h3>Totale</h3>
+                    </div>
+                    <div>
+                        <h3>{{totale}} €</h3>
+                    </div>
+
+                </div>
+                <hr>
+
+                <div id="buttons">
+                    <button id="btn1"><a [routerLink]="'/checkout'">Vai al pagamento</a></button>
+                    <button id="btn2"><img src="../../assets/paypal/paypal@2x.png" alt=""></button>
+                </div>
+
+            </div>
+           
+        </div>
+        
+        
+    </div>
+    
+ 
+
+
+
+</div>
+<div id="box4">
+    <div id="titolo">
+        <h2>Potrebbe piacerti anche</h2>
+        <div>
+            <button (click)="dietro4()">&lt;</button>
+            <button (click)="avanti4()">&gt;</button>
+        </div>
+    </div>
+    <div id="contenitoreslider">
+        <div class="slides" [style.transform]="'translateX(' + (-currentIndex3 * slideWidth3) + 'px)'">
+            <a  *ngFor="let nikee of scarpe" [routerLink]= "['/detail',nikee.id]">
+                <div class="slide" >
+                    <img [src]="nikee.immagine" alt="">
+                    <div>
+                       <h2>{{nikee.nome}}</h2>
+                       <h5>{{nikee.categoria}}</h5>
+                       <h3>{{nikee.prezzo}}€</h3>
+                    </div>
+                 </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+

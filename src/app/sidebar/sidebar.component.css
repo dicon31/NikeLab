@@ -1,0 +1,128 @@
+:host {
+  display: block;
+  grid-area: menu;
+  width: 305px;
+}
+
+
+.menu ul {
+    list-style: none;
+    
+    
+}
+.menu ul li {
+    list-style: none;
+    color: #111111;
+    font-weight: 500;
+    white-space: normal;
+    word-wrap: break-word;
+    line-height: 1.35em;
+    padding-bottom: 10px;
+    padding-right: 1.1em;
+    font-size: 16px;
+    
+}
+/*.accordion a {
+    text-decoration: none;
+    color: black;
+}*/
+
+.accordione a {
+    text-decoration: none;
+    color: black;
+}
+/*colori*/
+.contenitore2 ul{
+    list-style: none;
+    
+}
+.contenitore2 ul li{
+  font-size: 11px;
+  display: inline-block;
+  width: 65px;
+  text-align: center;
+}
+.contenitore2 ul li:hover{
+  color: #707072;
+}
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+.color1{
+  background-color: #8D429F
+}
+.color2{
+  background-color: #000 ;
+}
+.color3{
+  background-color: #E7352B;
+}
+.color4{
+  background-color: #F36B26; 
+}
+.color5{
+  background-color: #1790C8;
+}
+.color6{
+  background-color: #FFFFFF ;
+  border: 1px solid grey;
+}
+.color7{
+  background-color: #825D41;
+}
+.color8{
+  background-color: #7BBA3C;
+}
+.color9{
+  background-color: #FED533;;
+}
+.color10{
+  background: radial-gradient(#FFFFFF 20%, transparent 20%), radial-gradient(#FFFFFF 20%, transparent 20%), #000;; 
+}
+.color11{
+  background-color: #808080;
+}
+.color12{
+  background-color: #F0728F;
+}
+#uno{
+  width: 300px;
+  height: 800px;
+  font-family: sans-serif;
+  overflow-y: scroll;
+}
+#due{
+  display: none;
+}
+@media screen and (max-width:525px){
+  #uno{
+    display: none;
+  }
+  #due{
+    display: block;
+    width: 485px;
+    height: 30px;
+    margin-bottom: 50px;
+
+  }
+  #menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu2 ul{
+    display: flex;
+   
+
+
+  }
+  #menu2 ul li a{
+    color: black;
+
+  }
+
+
+}

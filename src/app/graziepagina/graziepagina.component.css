@@ -1,0 +1,77 @@
+#tutto{
+    height: 800px;
+    padding-top: 80px;
+    background: url(../../assets/Loghi/logo1.png);
+    
+    
+}
+#titolo {
+    width: 400px;
+    border: 2px solid black;
+    margin: 0px auto;
+    background-color: white;
+    text-align: center;
+
+    
+}
+#titolodestra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#titolodestra{
+    margin-bottom: 15px;
+}
+#titolodestra h2{
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+#modifica1 p{
+    margin: 0;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+   
+}
+#subtotale{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#costi1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#descrizione2{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#red{
+   
+    width: 60px;
+    height: 60px;
+}
+#red img{
+    
+    width: 60px;
+    height: 60px;
+}
+#descrizionee{
+    text-align: left;
+    
+    width: 260px;
+    color: #707072;
+}
+#descrizionee ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#descrizionee ul li p{
+    margin: 0;
+}
+#descrizionee ul li:first-child{
+    color: black;
+}

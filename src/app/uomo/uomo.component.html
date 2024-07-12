@@ -1,0 +1,309 @@
+<br>
+<br>
+<div id="vedere">
+    <div id="uomo">
+        <div id="strato1">
+            
+                <div id="titolo">
+                   <h1>Uomo</h1> 
+                </div>
+                <br>
+                  
+                <div id="menuprincipale">
+                    <ul>
+                        <li><a href="#">Outlet</a></li>
+                        <li><a href="#">Scarpe</a></li>
+                        <li><a href="#">Abbigliamento</a></li>
+                        <li><a href="#">Novità</a></li>
+                        <li><a href="#">Best seller</a></li>
+                    </ul>
+                </div>
+            
+    
+        </div>
+    
+    </div>
+    <br>
+    <br>
+   
+    <div id="camavinga">
+        <img src="../../assets/home/nike-just-do-it.png" alt="">
+    
+    </div>
+    <div id="camavinga2">
+        <div id="sfondo2">
+            <p>Air Max Dn</p>
+            <h3>UNREAL CAMAVINGA</h3>
+            <br>
+            <button>Acquista</button>
+        </div>
+    
+    </div>
+    
+    <div id="boxslide">
+        <div id="box1">
+            <div id="titolo1">
+                <h2>Tutte le migliori novità</h2>
+                <div>
+                    <button (click)="dietro1()">&lt;</button>
+                    <button (click)="avanti1()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider"> 
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex * slideWidth) + 'px)'">
+                    <div class="slide" *ngFor="let item of items"> 
+                        <img [src]="item.image" alt=""> 
+                        <div id="descrizione">
+                            <h3>{{ item.title }}</h3>
+                            <h3>{{ item.title1 }}</h3>
+                            <button>{{ item.button }}</button>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <div id="box1">
+            <div id="titolo">
+                <h2>Scarpe - Uomo</h2>
+                <div>
+                    <button (click)="dietro4()">&lt;</button>
+                    <button (click)="avanti4()">&gt;</button>
+                </div>
+            </div>
+            <div id="contenitoreslider">
+                <div class="slides" [style.transform]="'translateX(' + (-currentIndex3 * slideWidth3) + 'px)'">
+                    <a  *ngFor="let nikee of tipo" [routerLink]= "['/detail',nikee.id]">
+                        <div class="slide" >
+                            <img [src]="nikee.immagine" alt="">
+                            <div>
+                               <h2>{{nikee.nome}}</h2>
+                               <h5>{{nikee.categoria}}</h5>
+                               <h3>{{nikee.prezzo}}€</h3>
+                            </div>
+                         </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="box2">
+            <div id="titolo1">
+                <h2>Articoli per la stagione</h2>
+                
+            </div>
+           <div class="foto2"  *ngFor="let sporty of Sport">
+            <div class="primafoto">
+                <img [src]="sporty.img" alt="">
+               
+    
+            </div>
+            <div class="secondafoto">
+                <img [src]="sporty.img" alt="">
+    
+            </div>
+           </div>
+            
+        </div>
+        <div id="box3">
+            <div id="titolo1">
+                <h2>Membership Nike</h2>
+                
+            </div>
+            <div id="centrale">
+                <div id="sinistra">
+                    <img src="../../assets/uomo/secondo/imagine3.png" alt="">
+                    
+        
+                </div>
+                <div id="destra">
+                    <img src="../../assets/uomo/secondo/imagine2.png" alt="">
+        
+                </div>
+        
+            </div>
+        </div>
+    
+    </div>
+    <br>
+    <br>
+    
+    
+    <div id="contenitoremenu">
+       <div id="uno">
+        <div id="menu">
+        
+            <ul>
+                <p>Scarpe - Uomo</p>
+                <li><a href="#">Scarpe a taglio alto - Uomo</a></li>
+                <li><a href="#">Scarpe da cross-<br>raining - Uomo</a></li>
+                <li><a href="#">Scarpe da gara <br> chiodate Nike da uomo</a></li>
+                <li><a href="#">Scarpe per sollevamento pesi - <br> Uomo</a></li> 
+                <li><a href="#">Slider da uomo</a></li>
+                <li><a href="#">Scarpe per trail running <br> da uomo</a></li>
+                <li><a href="#">Scarpe da calcio per <br>erba sintetica da uomo</a></li>
+                <li><a href="#">Scarpe running <br>chiodate  da uomo</a></li>
+                
+                        
+          
+            </ul>
+            <ul>
+                <p>Abbigliamento e <br> accessori - Uomo</p>
+                <li><a href="#">Outlet di tute sportive</a> 
+                <li><a href="#">T-shirt da uomo</a> 
+                <li><a href="#">Canotte - Uomo</a> 
+                <li><a href="#">Shorts 2 in 1 da uomo</a> 
+                <li><a href="#">Tute da calcio da uomo</a> 
+                <li><a href="#">Shorts da calcio da <br> uomo</a> 
+                <li><a href="#">Pantaloni running da <br> uomo</a> 
+                <li><a href="#">Guanti per palestra da uomo</a> 
+                <li><a href="#">Parka da uomo</a> 
+                <li><a href="#">Tech Fleece da uomo</a> 
+    
+            </ul>
+            <ul>
+                <p>Collezioni</p>
+                <li><a href="#">Nike Air Max - Uomo</a></li>
+                <li><a href="#">Nike Roshe da uomo</a></li>
+                <li><a href="#">Nike Air Max 90 - Uomo</a></li>
+                <li><a href="#">Huarache - Uomo</a></li>
+                <li><a href="#">Nike Cortez da uomo</a></li>
+                <li><a href="#">Nike Presto da uomo</a></li>
+                <li><a href="#">Nike Air Max 95 - Uomo</a></li>
+                <li><a href="#">Air Max 97 - Uomo</a></li>
+                <li><a href="#">Nike Flyknit da uomo</a></li>
+                <li><a href="#">Nike Air Force 1 - Uomo</a></li>
+            </ul>
+            <ul>
+                <p>In evidenza</p>
+                <li><a href="#">Abbigliamento</a></li>
+                <li><a href="#">Costumi da bagno</a></li>
+                <li><a href="#">Nike Run Club</a></li>
+                <li><a href="#">Nike Training Club</a></li>
+                <li><a href="#">Abbigliamento sportivo<br> da uomo</a></li>
+                <li><a href="#">Yoga da uomo</a></li>
+                <li><a href="#"> Regali per la palestra<br> da uomo</a></li>
+                <li><a href="#">Regali per il running<br> da uomo</a></li>
+                <li><a href="#">Regali da uomo</a></li>
+                
+            </ul>
+        </div>
+       </div>
+    
+       
+    
+    </div>
+    <div id="due">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p>Scarpe - Uomo</p>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+
+                    <ul>
+                        
+                        <li><a href="#">Scarpe a taglio alto - Uomo</a></li>
+                        <li><a href="#">Scarpe da cross-raining - Uomo</a></li>
+                        <li><a href="#">Scarpe da gara chiodate Nike da uomo</a></li>
+                        <li><a href="#">Scarpe per sollevamento pesi - Uomo</a></li> 
+                        <li><a href="#">Slider da uomo</a></li>
+                        <li><a href="#">Scarpe per trail running  da uomo</a></li>
+                        <li><a href="#">Scarpe da calcio per erba sintetica da uomo</a></li>
+                        <li><a href="#">Scarpe running chiodate  da uomo</a></li>
+                        
+                                
+                  
+                    </ul>
+                            
+              
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <p>Abbigliamento e accessori - Uomo</p>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+
+                   
+                    <li><a href="#">Outlet di tute sportive</a> 
+                    <li><a href="#">T-shirt da uomo</a> 
+                    <li><a href="#">Canotte - Uomo</a> 
+                    <li><a href="#">Shorts 2 in 1 da uomo</a> 
+                    <li><a href="#">Tute da calcio da uomo</a> 
+                    <li><a href="#">Shorts da calcio da uomo</a> 
+                    <li><a href="#">Pantaloni running da uomo</a> 
+                    <li><a href="#">Guanti per palestra da uomo</a> 
+                    <li><a href="#">Parka da uomo</a> 
+                    <li><a href="#">Tech Fleece da uomo</a>
+                 
+                    
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <p>Collezioni</p>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <ul>
+                    <li><a href="#">Nike Air Max - Uomo</a></li>
+                    <li><a href="#">Nike Roshe da uomo</a></li>
+                    <li><a href="#">Nike Air Max 90 - Uomo</a></li>
+                    <li><a href="#">Huarache - Uomo</a></li>
+                    <li><a href="#">Nike Cortez da uomo</a></li>
+                    <li><a href="#">Nike Presto da uomo</a></li>
+                    <li><a href="#">Nike Air Max 95 - Uomo</a></li>
+                    <li><a href="#">Air Max 97 - Uomo</a></li>
+                    <li><a href="#">Nike Flyknit da uomo</a></li>
+                    <li><a href="#">Nike Air Force 1 - Uomo</a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+      
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    <p>In evidenza</p>
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <ul>
+
+                        
+                        <li><a href="#">Abbigliamento</a></li>
+                        <li><a href="#">Costumi da bagno</a></li>
+                        <li><a href="#">Nike Run Club</a></li>
+                        <li><a href="#">Nike Training Club</a></li>
+                        <li><a href="#">Abbigliamento sportivo<br> da uomo</a></li>
+                        <li><a href="#">Yoga da uomo</a></li>
+                        <li><a href="#"> Regali per la palestra<br> da uomo</a></li>
+                        <li><a href="#">Regali per il running<br> da uomo</a></li>
+                        <li><a href="#">Regali da uomo</a></li> 
+                    </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    </div>
+</div>
+
+

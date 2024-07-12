@@ -1,0 +1,436 @@
+#carello{
+    display: grid;
+    overflow-x: hidden;
+   
+}
+#carello2{
+    display:none;
+}
+#carello2 p{
+    text-align: center;
+}
+#carellomenu{
+    max-width: 100%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-areas: 
+    "sinistra destra";
+}
+#carellomenu #sinistra a {
+    color: black;
+}
+#carellomenu #sinistra{
+    width: 805px;
+    grid-area: sinistra;
+    
+} 
+#carellomenu #sinistra #titolo{
+    border: 1px solid grey ;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    display: block;
+    height: 90px;
+} 
+#carellomenu #sinistra #titolo p{
+    color: #707072;
+    font-size: 15px;
+}
+#carellomenu #sinistra #titolo p a{
+    color: #707072;
+    font-size: 15px;
+}
+#carellomenu #sinistra h2 {
+    color: #FF5000;
+    font-size: 20px;
+    
+}
+#carellomenu #sinistra h3{
+   margin-left: 10px;
+}
+#carello1 h1{
+    font-weight: 300;
+    font-size: 35px;
+}
+#scarpe{
+    
+    width: 712px;
+    height: 180px;
+    display: flex;
+    justify-content:start;
+    
+}
+#immagineshoes{
+    width: 164px;
+    height: 164px;
+    
+}
+#immagineshoes img{
+    width: 164px;
+    height: 164px;
+    
+}
+#nome  {
+   
+    width: 290px;
+    height: 110px;
+
+    
+}
+#flexami{
+    display: flex;
+    justify-content: space-around;
+}
+#nome1 h5:first-child{
+    font-size:medium;
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    color: black;
+    
+}
+#scarpe h5{
+    font-size: smaller;
+    line-height: inherit;
+    font-family: "Helvetica Now Text", Helvetica, Arial, sans-serif;
+    color: #707072;
+   
+}
+#prezzo1{
+    width: 69px;
+    height: 108px;
+    display: flex;
+    justify-content: center;
+}
+#misura{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    
+    
+}
+#descrizione33{
+    margin-left: 10px;
+    
+}
+#misura > div {
+    margin-bottom: 10px;
+}
+#misura select{
+    
+    
+    font-size: smaller;
+    margin-bottom: 10px;
+    width: 50px;
+    border-color: transparent;
+    color: #707072;
+}
+#icone ul{
+ list-style: none; 
+ display: flex;    
+ margin: 0;
+ padding: 0;
+}
+#icone ul li{
+    margin: 0 10px 0 0;
+}
+#carellomenu #destra{
+    width: 385px;
+    grid-area: destra;
+    margin-left: 4px;
+    
+} 
+
+
+
+#riepilogo{
+    vertical-align: top;
+    margin-bottom: 16px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+ 
+    
+}
+#riepilogo p{
+    font-size: 30px;
+    padding: 0 0 0 20px;
+}
+#riepilogo h4{
+    font-size: 16px;
+}
+#riepilogo #inputt input{
+    width: 230px;
+    height: 40px;
+    margin-right: 2px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    border: 1px solid #707072;
+}
+#riepilogo  #inputt button{
+    width: 104px;
+    height: 40px;
+    border-radius: 40px;
+    margin-left: 5px;
+    background-color: white;
+    border: 1px solid #707072;
+    color: #707072;
+}
+#totale {
+  
+    display: flex;
+    justify-content: space-between;
+}
+#totale1{
+    width: 110px;
+   
+}
+#spedizione {
+  
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#riepilogo h3{
+    font-size: 16px;
+    padding: 0 0 0 20px;
+}
+#totaletutto{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#buttons{
+    max-width: 100%;
+    
+}
+#buttons button{
+    margin: 0 0 0 20px;
+    width: 360px;
+    height: 60px;
+    border-radius: 60px;
+    color: white;
+}
+#buttons button:first-child{
+   background-color: black;
+   border-color: transparent;
+   margin-bottom: 10px ;
+}
+#buttons button:first-child:hover{
+    background-color: #707072;
+    
+ }
+#buttons button:last-child{
+    background-color: #f5f5f5;
+    border-color: transparent;
+    margin-bottom: 10px ;
+    border: 2px solid #f5f5f5;
+}
+#buttons button img:last-child{
+    width: 50px;
+}
+#buttons button:last-child:hover{
+    background-color: white;
+    
+}
+#boxslide1{
+    border: 2px solid red;
+}
+
+/*inizio slide*/
+#boxslide {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+}
+#box1 img{
+    width: 600px;
+    height: 600px;
+}
+
+#titolo {
+    display: flex;
+    justify-content: space-between;
+    height: 68px;
+}
+
+#titolo button {
+    width: 48px;
+    height: 48px;
+    background-color: #E5E5E5;
+    border-radius: 48px;
+    border-color: transparent;
+    margin-right: 10px;
+}
+
+#titolo button:hover {
+    border-color: blue;
+}
+/*slider*/
+#contenitoreslider{
+    overflow-y: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    margin-right: 10px; /* Spazio tra le slide */
+    
+
+}
+#descrizione h3{
+   margin: 15px 0;
+   font-family: sans-serif;
+}
+
+#box4{
+    width: 1820px;
+    margin: 20px auto;
+}
+#box4 img {
+    width: 600px;
+    height: 600px;
+}
+#box4 h2{
+    font-family: sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+
+}
+#box4 h5{
+    font-family: sans-serif;
+    color: #707072;
+    font-size: 20px;
+    
+}
+#box4 h3{
+    font-family: sans-serif;
+    color: black;
+    font-size: 20px;
+}
+#box4 a{
+    text-decoration: none;
+}
+#btn1 a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width:1388px){
+
+    #carello2{
+        margin: 0 auto;
+        display: block;  
+    }
+    #carello2 h1{
+        text-align: center;
+       }
+    #carellomenu{
+        max-width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-areas: 
+        "sinistra"
+        "destra";
+    }
+    #carello1{
+        display: none;
+    }
+    #riepilogo{
+        width: 805px;
+     margin: 0 auto;
+    
+        
+    }
+    #buttons{
+        width: 100%;
+        display: flex;
+        
+       
+       
+    }
+    #buttons button{
+        width: 100%; 
+       
+    }
+    #btn2{
+       
+        display: none;
+    }
+
+}
+@media screen and (max-width:525px){
+    #carellomenu{
+        max-width: 100%;
+        display: grid;
+        grid-template-areas: 
+        "sinistra"
+        "destra";
+    }
+    #carellomenu #sinistra #titolo{
+        border: 1px solid grey ;
+        padding: 16px 20px;
+        margin-bottom: 12px;
+        display: block;
+        width: 480px;
+        height: 110px;
+    } 
+    #carellomenu #sinistra{
+        width: 480px;
+        grid-area: sinistra;
+        
+    } 
+    #prezzo1{
+        
+        width: 69px;
+        display: block;
+    }
+    #nome  {
+        
+        width: 240px;
+        height: 120px;
+    
+        
+    }
+    #carellomenu #destra{
+        width: 490px;
+        margin: 0;
+        grid-area: destra;
+        
+        
+    }
+    #riepilogo{
+        width: 455px;
+    }
+    #riepilogo #inputt input{
+        width: 230px;
+        height: 40px;
+        margin-right: 2px;
+        border-radius: 8px;
+        padding: 8px 16px;
+        border: 1px solid #707072;
+    }
+    #riepilogo  #inputt button{
+        width: 104px;
+        height: 40px;
+        border-radius: 40px;
+        margin-left: 5px;
+        background-color: white;
+        border: 1px solid #707072;
+        color: #707072;
+    }
+    #totale {
+      
+        display: flex;
+        justify-content: space-between;
+    }
+    #box4 img {
+        width: 420px;
+        height: 420px;
+    }
+ 
+ 
+}
